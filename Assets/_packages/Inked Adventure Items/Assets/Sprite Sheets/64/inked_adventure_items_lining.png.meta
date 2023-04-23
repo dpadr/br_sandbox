@@ -1,0 +1,3285 @@
+fileFormatVersion: 2
+guid: 41f756054f8d97340843e5d12ac53ea7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6561741220945867689
+    second: inked_adventure_items_lining_0
+  - first:
+      213: -2242013237119033013
+    second: inked_adventure_items_lining_1
+  - first:
+      213: -5170485002838318218
+    second: inked_adventure_items_lining_2
+  - first:
+      213: -6062290469908256653
+    second: inked_adventure_items_lining_3
+  - first:
+      213: -6867713786561340716
+    second: inked_adventure_items_lining_4
+  - first:
+      213: 4439749826706257597
+    second: inked_adventure_items_lining_5
+  - first:
+      213: -1629546812851897553
+    second: inked_adventure_items_lining_6
+  - first:
+      213: 3674403627199140136
+    second: inked_adventure_items_lining_7
+  - first:
+      213: -105479804969684707
+    second: inked_adventure_items_lining_8
+  - first:
+      213: -247972813629150728
+    second: inked_adventure_items_lining_9
+  - first:
+      213: 4253022455862514722
+    second: inked_adventure_items_lining_10
+  - first:
+      213: -6238237509933558177
+    second: inked_adventure_items_lining_11
+  - first:
+      213: -5676298999423262767
+    second: inked_adventure_items_lining_12
+  - first:
+      213: 1367182275151480576
+    second: inked_adventure_items_lining_13
+  - first:
+      213: -8135614589869496568
+    second: inked_adventure_items_lining_14
+  - first:
+      213: 6729472231545107739
+    second: inked_adventure_items_lining_15
+  - first:
+      213: -3386856824903467982
+    second: inked_adventure_items_lining_16
+  - first:
+      213: -8934708426381229495
+    second: inked_adventure_items_lining_17
+  - first:
+      213: -3564949679674898677
+    second: inked_adventure_items_lining_18
+  - first:
+      213: -3367395565853252728
+    second: inked_adventure_items_lining_19
+  - first:
+      213: -3048453511631637347
+    second: inked_adventure_items_lining_20
+  - first:
+      213: -3033397750309917691
+    second: inked_adventure_items_lining_21
+  - first:
+      213: 3725136331882730375
+    second: inked_adventure_items_lining_22
+  - first:
+      213: -479029040569582596
+    second: inked_adventure_items_lining_23
+  - first:
+      213: 9113715100937812319
+    second: inked_adventure_items_lining_24
+  - first:
+      213: -5695739489022467876
+    second: inked_adventure_items_lining_25
+  - first:
+      213: 2191446313355359929
+    second: inked_adventure_items_lining_26
+  - first:
+      213: 7199819953945022175
+    second: inked_adventure_items_lining_27
+  - first:
+      213: 2927952534817959723
+    second: inked_adventure_items_lining_28
+  - first:
+      213: 2023900839090625477
+    second: inked_adventure_items_lining_29
+  - first:
+      213: 7972698119947360706
+    second: inked_adventure_items_lining_30
+  - first:
+      213: -3699296904768136806
+    second: inked_adventure_items_lining_31
+  - first:
+      213: -8732405181282549372
+    second: inked_adventure_items_lining_32
+  - first:
+      213: 2705085096227163219
+    second: inked_adventure_items_lining_33
+  - first:
+      213: -3825675992927004890
+    second: inked_adventure_items_lining_34
+  - first:
+      213: 9072673964025409838
+    second: inked_adventure_items_lining_35
+  - first:
+      213: -2439962537755923189
+    second: inked_adventure_items_lining_36
+  - first:
+      213: 1717608215677800879
+    second: inked_adventure_items_lining_37
+  - first:
+      213: 8089120026663413629
+    second: inked_adventure_items_lining_38
+  - first:
+      213: -1343087505717547402
+    second: inked_adventure_items_lining_39
+  - first:
+      213: -8262957896035890219
+    second: inked_adventure_items_lining_40
+  - first:
+      213: 4102654371822767180
+    second: inked_adventure_items_lining_41
+  - first:
+      213: 4386964976187838317
+    second: inked_adventure_items_lining_42
+  - first:
+      213: 6265734215251745683
+    second: inked_adventure_items_lining_43
+  - first:
+      213: 8020492508235090094
+    second: inked_adventure_items_lining_44
+  - first:
+      213: 2998145938097640570
+    second: inked_adventure_items_lining_45
+  - first:
+      213: 4816819953718046775
+    second: inked_adventure_items_lining_46
+  - first:
+      213: -8954511218603422135
+    second: inked_adventure_items_lining_47
+  - first:
+      213: -8876187565648649725
+    second: inked_adventure_items_lining_48
+  - first:
+      213: 9110092949784516242
+    second: inked_adventure_items_lining_49
+  - first:
+      213: 1094346507779231341
+    second: inked_adventure_items_lining_50
+  - first:
+      213: -8796310607888523543
+    second: inked_adventure_items_lining_51
+  - first:
+      213: 8425258823211900949
+    second: inked_adventure_items_lining_52
+  - first:
+      213: -1104664877671754290
+    second: inked_adventure_items_lining_53
+  - first:
+      213: 6808218834417473476
+    second: inked_adventure_items_lining_54
+  - first:
+      213: 5902301106141703286
+    second: inked_adventure_items_lining_55
+  - first:
+      213: 7007085055865900911
+    second: inked_adventure_items_lining_56
+  - first:
+      213: 6972750513791178538
+    second: inked_adventure_items_lining_57
+  - first:
+      213: 1375675295276330014
+    second: inked_adventure_items_lining_58
+  - first:
+      213: 7225617513213721325
+    second: inked_adventure_items_lining_59
+  - first:
+      213: -7348048178997555365
+    second: inked_adventure_items_lining_60
+  - first:
+      213: -8727395076910223839
+    second: inked_adventure_items_lining_61
+  - first:
+      213: 507725024635107240
+    second: inked_adventure_items_lining_62
+  - first:
+      213: 6476509744634577687
+    second: inked_adventure_items_lining_63
+  - first:
+      213: 8148713993050776665
+    second: inked_adventure_items_lining_64
+  - first:
+      213: -6982678865726386766
+    second: inked_adventure_items_lining_65
+  - first:
+      213: 4414209387708708761
+    second: inked_adventure_items_lining_66
+  - first:
+      213: -5249054947574934281
+    second: inked_adventure_items_lining_67
+  - first:
+      213: 7944062967614977632
+    second: inked_adventure_items_lining_68
+  - first:
+      213: -6019125678302691254
+    second: inked_adventure_items_lining_69
+  - first:
+      213: 4815147453132986575
+    second: inked_adventure_items_lining_70
+  - first:
+      213: 3124939785498692346
+    second: inked_adventure_items_lining_71
+  - first:
+      213: -1904117728875388518
+    second: inked_adventure_items_lining_72
+  - first:
+      213: -7572695209210656463
+    second: inked_adventure_items_lining_73
+  - first:
+      213: -4244380962795786082
+    second: inked_adventure_items_lining_74
+  - first:
+      213: 8746340273890169587
+    second: inked_adventure_items_lining_75
+  - first:
+      213: 8577570871634694030
+    second: inked_adventure_items_lining_76
+  - first:
+      213: 8014731229618129514
+    second: inked_adventure_items_lining_77
+  - first:
+      213: -3485950169376353308
+    second: inked_adventure_items_lining_78
+  - first:
+      213: -4013851490382957394
+    second: inked_adventure_items_lining_79
+  - first:
+      213: -859067320396014671
+    second: inked_adventure_items_lining_80
+  - first:
+      213: 8396866761343520344
+    second: inked_adventure_items_lining_81
+  - first:
+      213: 3018600258931543944
+    second: inked_adventure_items_lining_82
+  - first:
+      213: 8172754107751129921
+    second: inked_adventure_items_lining_83
+  - first:
+      213: -3556281238815808856
+    second: inked_adventure_items_lining_84
+  - first:
+      213: 951578042583210566
+    second: inked_adventure_items_lining_85
+  - first:
+      213: -3356712323154084132
+    second: inked_adventure_items_lining_86
+  - first:
+      213: -58435273410669415
+    second: inked_adventure_items_lining_87
+  - first:
+      213: -8519502796867144286
+    second: inked_adventure_items_lining_88
+  - first:
+      213: 1751666859167593481
+    second: inked_adventure_items_lining_89
+  - first:
+      213: 4022473606655279590
+    second: inked_adventure_items_lining_90
+  - first:
+      213: 2902164206552412636
+    second: inked_adventure_items_lining_91
+  - first:
+      213: -6258466213731903337
+    second: inked_adventure_items_lining_92
+  - first:
+      213: 8423730295326736630
+    second: inked_adventure_items_lining_93
+  - first:
+      213: -6692350917440246082
+    second: inked_adventure_items_lining_94
+  - first:
+      213: 8590336603924463505
+    second: inked_adventure_items_lining_95
+  - first:
+      213: 3781943453366686930
+    second: inked_adventure_items_lining_96
+  - first:
+      213: 8048081168431230941
+    second: inked_adventure_items_lining_97
+  - first:
+      213: 4547087106290404399
+    second: inked_adventure_items_lining_98
+  - first:
+      213: -7542813129347540101
+    second: inked_adventure_items_lining_99
+  - first:
+      213: -3415061646543109978
+    second: inked_adventure_items_lining_100
+  - first:
+      213: 5544065727502278018
+    second: inked_adventure_items_lining_101
+  - first:
+      213: 7147790275470725868
+    second: inked_adventure_items_lining_102
+  - first:
+      213: 3135809377843213692
+    second: inked_adventure_items_lining_103
+  - first:
+      213: 7471999531530526744
+    second: inked_adventure_items_lining_104
+  - first:
+      213: -1162727527719152944
+    second: inked_adventure_items_lining_105
+  - first:
+      213: 5266899747808096312
+    second: inked_adventure_items_lining_106
+  - first:
+      213: 3596795500462760723
+    second: inked_adventure_items_lining_107
+  - first:
+      213: -2444229034973953596
+    second: inked_adventure_items_lining_108
+  - first:
+      213: 3902503462802685613
+    second: inked_adventure_items_lining_109
+  - first:
+      213: -5484043096802941906
+    second: inked_adventure_items_lining_110
+  - first:
+      213: 2970104642396795470
+    second: inked_adventure_items_lining_111
+  - first:
+      213: -289345133907077325
+    second: inked_adventure_items_lining_112
+  - first:
+      213: -3351521311190213691
+    second: inked_adventure_items_lining_113
+  - first:
+      213: -7129329231335137743
+    second: inked_adventure_items_lining_114
+  - first:
+      213: -432764946065833957
+    second: inked_adventure_items_lining_115
+  - first:
+      213: 5077738480284326368
+    second: inked_adventure_items_lining_116
+  - first:
+      213: 8413301924455481340
+    second: inked_adventure_items_lining_117
+  - first:
+      213: -1876543817609241248
+    second: inked_adventure_items_lining_118
+  - first:
+      213: 2716125091765918093
+    second: inked_adventure_items_lining_119
+  - first:
+      213: -2672162176966215211
+    second: inked_adventure_items_lining_120
+  - first:
+      213: -5234121522626140288
+    second: inked_adventure_items_lining_121
+  - first:
+      213: 1975914603339731425
+    second: inked_adventure_items_lining_122
+  - first:
+      213: -8371429462981995367
+    second: inked_adventure_items_lining_123
+  - first:
+      213: -2519423291065559740
+    second: inked_adventure_items_lining_124
+  - first:
+      213: 6340510789714700
+    second: inked_adventure_items_lining_125
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27a0268b86dabd40824ebcfb24db936
+      internalID: -6561741220945867689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2669be697126d4884ff0742660fd26
+      internalID: -2242013237119033013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b895a274eb1bd4989827669d4efb67
+      internalID: -5170485002838318218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e94f40786c94474f918c640d2e65588
+      internalID: -6062290469908256653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2ba7e47dc38745a6cc8c0b159cb40
+      internalID: -6867713786561340716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50df3c20d66687f4bb6159ac9ad9e8f6
+      internalID: 4439749826706257597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c6b3d0ad59c0c40845fed1b341db98
+      internalID: -1629546812851897553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54ece9d5c98eda41aeee5a56958408f
+      internalID: 3674403627199140136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cad3237e2d95e40a41b0d2f689ad03
+      internalID: -105479804969684707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9f01aaf0554b14991298047e096da2
+      internalID: -247972813629150728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12d74b4d19f0e04db81e3414e632510
+      internalID: 4253022455862514722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae97cb6b2c98a049a3a229c8bfe3bcf
+      internalID: -6238237509933558177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e53882618fc97419283920ad83152f
+      internalID: -5676298999423262767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a4baf46b8211c43bbb42f17b49bf18
+      internalID: 1367182275151480576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32167d345da96246a6c961a39c76a7f
+      internalID: -8135614589869496568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ed142cf474dc1448251e00b3396369
+      internalID: 6729472231545107739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83f9f04b78f9434cbf8077b38a2fd87
+      internalID: -3386856824903467982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e521107bd70d5e7488ef3372e231a6ae
+      internalID: -8934708426381229495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782b516e3d15c6d4e8caf62c14de45f1
+      internalID: -3564949679674898677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7300f78ec4c976f4f83286b45c2d51db
+      internalID: -3367395565853252728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10fa62d0c25b3c4db04d44611b36dc4
+      internalID: -3048453511631637347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30c20d68bf060c40bc4b9eb49fbde3e
+      internalID: -3033397750309917691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c6ce79d7fc42842b193a9e62c10524
+      internalID: 3725136331882730375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5800ac622105e498603093b4596758
+      internalID: -479029040569582596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f5153dfa0f55349b3a6aad93af0800
+      internalID: 9113715100937812319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0ed90aeecd5f04e8e140cc7c978645
+      internalID: -5695739489022467876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0802132e640064d9b47910b044e874
+      internalID: 2191446313355359929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_27
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dcae5baa45e404f838810c343cc37f
+      internalID: 7199819953945022175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560f0547047265b498cddc4922985bcf
+      internalID: 2927952534817959723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e44164fa234d9489916930b30a5567
+      internalID: 2023900839090625477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_30
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bc3d151a2b44d41a477b2b45fdae1c
+      internalID: 7972698119947360706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_31
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e135600b2f2e95c41860e80598b4754a
+      internalID: -3699296904768136806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c5a04980a236048a128c9a1846481f
+      internalID: -8732405181282549372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c9a6c6302551e42a45e21ddbee7678
+      internalID: 2705085096227163219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfb96e8858fafa42aea7f31221d1c76
+      internalID: -3825675992927004890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7d9f18d11393141b7e0fa20c89547c
+      internalID: 9072673964025409838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78511715e48016b4e9554b217418b482
+      internalID: -2439962537755923189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05032438ad44a074887bac935e67c84a
+      internalID: 1717608215677800879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289fa585f5d4ca94297c2f6dd0dceef2
+      internalID: 8089120026663413629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495825f2fd6e0e849a6db6c1e562d919
+      internalID: -1343087505717547402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884e58c342d2ea84780cedd45e3a3c97
+      internalID: -8262957896035890219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518e828b33536954baf32b6622c100cc
+      internalID: 4102654371822767180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf321acaed790748968b3d8d1a25d99
+      internalID: 4386964976187838317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d61635573225994abfb7c7acd917e35
+      internalID: 6265734215251745683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fb04da707d9184f85206facd0e7f75
+      internalID: 8020492508235090094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6212b718c334b42a562e9273126283
+      internalID: 2998145938097640570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba01cb4a01f92a4ca5d0f81e4051e4b
+      internalID: 4816819953718046775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba32ee18c9955ab4fa11ebbc8670c10b
+      internalID: -8954511218603422135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4a6fca68208374f8220c9e98a62377
+      internalID: -8876187565648649725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0965df9187be048983fa4eb4690e9f
+      internalID: 9110092949784516242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d4644cff9b1e344a7cd8d9b9aab70a
+      internalID: 1094346507779231341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc28155c3335c948906c2814467dad7
+      internalID: -8796310607888523543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_52
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b38170c5cf18a4f8f09cd422caeca6
+      internalID: 8425258823211900949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d043c70a8ec094f959224002e5d120
+      internalID: -1104664877671754290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa0b857720840f419a694672862f671
+      internalID: 6808218834417473476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_55
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e8d2623941f82419c7f0f72d3c0b9e
+      internalID: 5902301106141703286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfe7c1e0a807e145846c728291cad5c
+      internalID: 7007085055865900911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_57
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52f26d6e59abfb4d843954f9d7157ac
+      internalID: 6972750513791178538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_58
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8038e8acb5ba8dc4faa95d67727ac9f4
+      internalID: 1375675295276330014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_59
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00af4de310fe98046b23c6158a14d39b
+      internalID: 7225617513213721325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_60
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3ba0c7312e56b4fac71c7db099c5db
+      internalID: -7348048178997555365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_61
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0cbfee78499cc448d54f3f6549c3e0
+      internalID: -8727395076910223839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ce455b5e52df34eb9c4a140c03a912
+      internalID: 507725024635107240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_63
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfdb5e2fbea16a4285b866ceab70d73
+      internalID: 6476509744634577687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b29d7ec071273b4a97850d98d18a272
+      internalID: 8148713993050776665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604f8573af7c72e4eb7c142996ad50bd
+      internalID: -6982678865726386766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3998198361ca664caaca1a712edfc8e
+      internalID: 4414209387708708761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_67
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a10ce14b3c96084ebe9770798c19ffb
+      internalID: -5249054947574934281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c6af607f36f264d8f5d3762cd7ce06
+      internalID: 7944062967614977632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_69
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f8ac3cbbff33c489623e9de84b2b2a
+      internalID: -6019125678302691254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8001fd03f223f094ca356865be7a7659
+      internalID: 4815147453132986575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_71
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcd7ef977cfcf444912edaa93bd37eb
+      internalID: 3124939785498692346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_72
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8a4ec8e131c654c8af484eb338af17
+      internalID: -1904117728875388518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_73
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8c4ffad63c4940bcd6c313302ea83
+      internalID: -7572695209210656463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_74
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa4067cffa96ca45a90690a9a18ed2f
+      internalID: -4244380962795786082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_75
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77ac02448c8b144a8e3484a592eecdc
+      internalID: 8746340273890169587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7974c7f812db8748ad6e3298a1293aa
+      internalID: 8577570871634694030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_77
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d7fef10ca5ac64581ff884e6d9e315
+      internalID: 8014731229618129514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_78
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3644514f3d9aec64485ca8122e16f30e
+      internalID: -3485950169376353308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_79
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83378eb85a57d542b4ca2ae0c1b1ce4
+      internalID: -4013851490382957394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8e0c08a0d29bd4d89c39c72353c943
+      internalID: -859067320396014671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_81
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e999d87758ca9449613a49057a17f2
+      internalID: 8396866761343520344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_82
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184e6f87b6fcb284080a706d264e63b1
+      internalID: 3018600258931543944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_83
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917b58dacca792d40b84c5e3753d2ab7
+      internalID: 8172754107751129921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccc7790e52b8304ba99adca137d3618
+      internalID: -3556281238815808856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_85
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cdec988ad8ba042bb1de149c473851
+      internalID: 951578042583210566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_86
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c3633e38598e04e8078ce35bb16231
+      internalID: -3356712323154084132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_87
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c98ef3435dc5b4ba7723749e96df01
+      internalID: -58435273410669415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_88
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f6c9a36b2ff3b468a5e783630311c4
+      internalID: -8519502796867144286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_89
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24334b4f355a92f42864c2c3e1870daa
+      internalID: 1751666859167593481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_90
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fb3c08fd7e0274f88c104086082e31
+      internalID: 4022473606655279590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_91
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8360141b8e85bb04e97d83dbb7871282
+      internalID: 2902164206552412636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_92
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1969f57c233a71341a697ba3ab070140
+      internalID: -6258466213731903337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_93
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65c9f98f8e952f4180fd39239159b88
+      internalID: 8423730295326736630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_94
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1e63de0d49cbd46913a0b0603138c1
+      internalID: -6692350917440246082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_95
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bcff1e09cd7a44bb454e9d1c02621a
+      internalID: 8590336603924463505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a8c9bdf9c7758489fae0c389ec29de
+      internalID: 3781943453366686930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_97
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d737ca22e5c4ddc4fb0036ddeee5879b
+      internalID: 8048081168431230941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82de10b1828ff24dbd001131ff0b471
+      internalID: 4547087106290404399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_99
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f625f5779364e4a8c04176911c22cf
+      internalID: -7542813129347540101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef345854f5572b4fa52d81f8987bf67
+      internalID: -3415061646543109978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_101
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb4f8025ef7d324e8a1dff9841fb086
+      internalID: 5544065727502278018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_102
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c60153ec4ce4364fb9c76e210e510e3
+      internalID: 7147790275470725868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_103
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d438c2845bb4ecb45a416abf3bf35517
+      internalID: 3135809377843213692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9bfd80a40bfeb42a7b1fb27357e4cc
+      internalID: 7471999531530526744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_105
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26ca8806c302c34d930b9eabf9258e5
+      internalID: -1162727527719152944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9138d34cd543b6247b5762949929beda
+      internalID: 5266899747808096312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_107
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c5686e186df424eb383b9a5f1a97e7
+      internalID: 3596795500462760723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_108
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a37a49971caa3c468bb3e27b4ed530e
+      internalID: -2444229034973953596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_109
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e9c3ea24b1c6d43a2d07ca6b318b73
+      internalID: 3902503462802685613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_110
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032b50777006f9c44bc44e0b4216ce74
+      internalID: -5484043096802941906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_111
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637e8dd8594f97d43b1d637f916865de
+      internalID: 2970104642396795470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06581d3411c7081488fa67fe3e5e2b75
+      internalID: -289345133907077325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a8de75a8ed5444ca7971276dccd65c
+      internalID: -3351521311190213691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_114
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8662200400aa3154bba2a0be5585bae5
+      internalID: -7129329231335137743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59da4b522005fc14e88e6ba140f5cd0f
+      internalID: -432764946065833957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257c203097613a646829e99357f1af3e
+      internalID: 5077738480284326368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_117
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f68385aad71f94eacaf3974ad2d48f
+      internalID: 8413301924455481340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_118
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f36e6bd1245a243a8d1726c7d99e6d
+      internalID: -1876543817609241248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_119
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651a58c9720849d4a81a4751efe501be
+      internalID: 2716125091765918093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_120
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327ea598073d9694c82ef3a95baf20d5
+      internalID: -2672162176966215211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_121
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55cb2449eb38696468a473a8aa994dda
+      internalID: -5234121522626140288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_122
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ff565ec0201c04da54ac0860952bcd
+      internalID: 1975914603339731425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_123
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e3e7cce7621c14c89a284181343d04
+      internalID: -8371429462981995367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_124
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a90adc42b590d147b8f478ef8e84964
+      internalID: -2519423291065559740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inked_adventure_items_lining_125
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a527174570e444daf49337722a5a60
+      internalID: 6340510789714700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 189fc9b0320104042b43feb9fced4e6d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      inked_adventure_items_lining_87: -58435273410669415
+      inked_adventure_items_lining_110: -5484043096802941906
+      inked_adventure_items_lining_104: 7471999531530526744
+      inked_adventure_items_lining_98: 4547087106290404399
+      inked_adventure_items_lining_91: 2902164206552412636
+      inked_adventure_items_lining_93: 8423730295326736630
+      inked_adventure_items_lining_33: 2705085096227163219
+      inked_adventure_items_lining_41: 4102654371822767180
+      inked_adventure_items_lining_103: 3135809377843213692
+      inked_adventure_items_lining_89: 1751666859167593481
+      inked_adventure_items_lining_54: 6808218834417473476
+      inked_adventure_items_lining_106: 5266899747808096312
+      inked_adventure_items_lining_46: 4816819953718046775
+      inked_adventure_items_lining_1: -2242013237119033013
+      inked_adventure_items_lining_69: -6019125678302691254
+      inked_adventure_items_lining_124: -2519423291065559740
+      inked_adventure_items_lining_10: 4253022455862514722
+      inked_adventure_items_lining_32: -8732405181282549372
+      inked_adventure_items_lining_51: -8796310607888523543
+      inked_adventure_items_lining_72: -1904117728875388518
+      inked_adventure_items_lining_90: 4022473606655279590
+      inked_adventure_items_lining_42: 4386964976187838317
+      inked_adventure_items_lining_4: -6867713786561340716
+      inked_adventure_items_lining_15: 6729472231545107739
+      inked_adventure_items_lining_86: -3356712323154084132
+      inked_adventure_items_lining_105: -1162727527719152944
+      inked_adventure_items_lining_115: -432764946065833957
+      inked_adventure_items_lining_64: 8148713993050776665
+      inked_adventure_items_lining_125: 6340510789714700
+      inked_adventure_items_lining_38: 8089120026663413629
+      inked_adventure_items_lining_3: -6062290469908256653
+      inked_adventure_items_lining_22: 3725136331882730375
+      inked_adventure_items_lining_39: -1343087505717547402
+      inked_adventure_items_lining_2: -5170485002838318218
+      inked_adventure_items_lining_23: -479029040569582596
+      inked_adventure_items_lining_9: -247972813629150728
+      inked_adventure_items_lining_31: -3699296904768136806
+      inked_adventure_items_lining_40: -8262957896035890219
+      inked_adventure_items_lining_61: -8727395076910223839
+      inked_adventure_items_lining_47: -8954511218603422135
+      inked_adventure_items_lining_44: 8020492508235090094
+      inked_adventure_items_lining_75: 8746340273890169587
+      inked_adventure_items_lining_14: -8135614589869496568
+      inked_adventure_items_lining_122: 1975914603339731425
+      inked_adventure_items_lining_88: -8519502796867144286
+      inked_adventure_items_lining_11: -6238237509933558177
+      inked_adventure_items_lining_27: 7199819953945022175
+      inked_adventure_items_lining_112: -289345133907077325
+      inked_adventure_items_lining_29: 2023900839090625477
+      inked_adventure_items_lining_35: 9072673964025409838
+      inked_adventure_items_lining_36: -2439962537755923189
+      inked_adventure_items_lining_109: 3902503462802685613
+      inked_adventure_items_lining_65: -6982678865726386766
+      inked_adventure_items_lining_13: 1367182275151480576
+      inked_adventure_items_lining_50: 1094346507779231341
+      inked_adventure_items_lining_101: 5544065727502278018
+      inked_adventure_items_lining_49: 9110092949784516242
+      inked_adventure_items_lining_53: -1104664877671754290
+      inked_adventure_items_lining_121: -5234121522626140288
+      inked_adventure_items_lining_7: 3674403627199140136
+      inked_adventure_items_lining_79: -4013851490382957394
+      inked_adventure_items_lining_70: 4815147453132986575
+      inked_adventure_items_lining_74: -4244380962795786082
+      inked_adventure_items_lining_56: 7007085055865900911
+      inked_adventure_items_lining_59: 7225617513213721325
+      inked_adventure_items_lining_20: -3048453511631637347
+      inked_adventure_items_lining_84: -3556281238815808856
+      inked_adventure_items_lining_5: 4439749826706257597
+      inked_adventure_items_lining_100: -3415061646543109978
+      inked_adventure_items_lining_120: -2672162176966215211
+      inked_adventure_items_lining_25: -5695739489022467876
+      inked_adventure_items_lining_8: -105479804969684707
+      inked_adventure_items_lining_111: 2970104642396795470
+      inked_adventure_items_lining_45: 2998145938097640570
+      inked_adventure_items_lining_17: -8934708426381229495
+      inked_adventure_items_lining_99: -7542813129347540101
+      inked_adventure_items_lining_123: -8371429462981995367
+      inked_adventure_items_lining_80: -859067320396014671
+      inked_adventure_items_lining_119: 2716125091765918093
+      inked_adventure_items_lining_6: -1629546812851897553
+      inked_adventure_items_lining_48: -8876187565648649725
+      inked_adventure_items_lining_0: -6561741220945867689
+      inked_adventure_items_lining_82: 3018600258931543944
+      inked_adventure_items_lining_118: -1876543817609241248
+      inked_adventure_items_lining_92: -6258466213731903337
+      inked_adventure_items_lining_12: -5676298999423262767
+      inked_adventure_items_lining_77: 8014731229618129514
+      inked_adventure_items_lining_26: 2191446313355359929
+      inked_adventure_items_lining_18: -3564949679674898677
+      inked_adventure_items_lining_73: -7572695209210656463
+      inked_adventure_items_lining_113: -3351521311190213691
+      inked_adventure_items_lining_24: 9113715100937812319
+      inked_adventure_items_lining_57: 6972750513791178538
+      inked_adventure_items_lining_97: 8048081168431230941
+      inked_adventure_items_lining_107: 3596795500462760723
+      inked_adventure_items_lining_76: 8577570871634694030
+      inked_adventure_items_lining_85: 951578042583210566
+      inked_adventure_items_lining_28: 2927952534817959723
+      inked_adventure_items_lining_66: 4414209387708708761
+      inked_adventure_items_lining_108: -2444229034973953596
+      inked_adventure_items_lining_117: 8413301924455481340
+      inked_adventure_items_lining_114: -7129329231335137743
+      inked_adventure_items_lining_71: 3124939785498692346
+      inked_adventure_items_lining_95: 8590336603924463505
+      inked_adventure_items_lining_83: 8172754107751129921
+      inked_adventure_items_lining_55: 5902301106141703286
+      inked_adventure_items_lining_52: 8425258823211900949
+      inked_adventure_items_lining_16: -3386856824903467982
+      inked_adventure_items_lining_62: 507725024635107240
+      inked_adventure_items_lining_67: -5249054947574934281
+      inked_adventure_items_lining_102: 7147790275470725868
+      inked_adventure_items_lining_37: 1717608215677800879
+      inked_adventure_items_lining_43: 6265734215251745683
+      inked_adventure_items_lining_94: -6692350917440246082
+      inked_adventure_items_lining_96: 3781943453366686930
+      inked_adventure_items_lining_68: 7944062967614977632
+      inked_adventure_items_lining_30: 7972698119947360706
+      inked_adventure_items_lining_21: -3033397750309917691
+      inked_adventure_items_lining_63: 6476509744634577687
+      inked_adventure_items_lining_78: -3485950169376353308
+      inked_adventure_items_lining_81: 8396866761343520344
+      inked_adventure_items_lining_58: 1375675295276330014
+      inked_adventure_items_lining_60: -7348048178997555365
+      inked_adventure_items_lining_116: 5077738480284326368
+      inked_adventure_items_lining_19: -3367395565853252728
+      inked_adventure_items_lining_34: -3825675992927004890
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

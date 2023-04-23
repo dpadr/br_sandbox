@@ -1,0 +1,287 @@
+<html>
+	<head>
+		<title>Inked Adventure Items Tutorial</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Sniglet:400" rel="stylesheet">
+		<style>
+			body {
+				margin: 0px 0px 900px 0px;
+				padding: 0px;
+				background-color: #efefef;
+				font-family: 'Lato', sans-serif;
+				font-size: 20px;
+				font-weight: 400;
+				color: #454545;
+				line-height: 34px;
+				text-align: justify;
+			}
+			#divMain {
+				width: 700px;
+				margin: 0px auto;
+			}
+			h1 {
+				text-transform: uppercase;
+				text-align: center;
+				font-family: 'Sniglet', cursive;
+				font-size: 50pt;
+				color: #454545;
+				margin-top: 50px;
+				margin-bottom: 160px;
+				letter-spacing: 3px;
+			}
+			h2 {
+				text-transform: uppercase;
+				text-align: center;
+				font-family: 'Sniglet', cursive;
+				font-size: 28pt;
+				color: #454545;
+				font-weight: 400;
+				margin-top: 80px;
+				margin-bottom: 40px;
+				letter-spacing: 2px;
+			}
+			p {
+				
+			}
+			i {
+				color: #666;
+			}
+			a:link, a:visited, a:active, a:hover {
+				background-color: #fff;
+				color: #454545;
+				text-decoration: none;
+				padding: 5px;
+			}
+			a:hover {
+				background-color: #454545;
+				color: #fff;
+			}
+			table {
+				font-family: 'Lato', sans-serif;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 34px;
+				color: #454545;
+				padding: 10px 30px 10px 30px;
+				margin: 20px 0px 20px 0px;
+				border-collapse: collapse;
+			}
+			tr {
+				border-bottom: 3px dotted #cfcfcf;
+			}
+			td {
+				height: 30px;
+				vertical-align: top;
+				text-align: justify;
+				padding: 5px;
+			}
+			.tableColors td {
+				vertical-align: middle;
+				padding-left: 12px;
+			}
+			.tableColors tr {
+				border: 0px;
+			}
+			.spanColor {
+				padding: 5px;
+			}
+			.spanWhite {
+				background-color: #fff;
+			}
+			.spanLight {
+				background-color: #efefef;
+				border: 2px dotted #fff;
+			}
+			.spanMedium {
+				background-color: #cfcfcf;
+			}
+			.spanDark {
+				background-color: #b8b8b8;
+			}
+			.spanLining {
+				background-color: #454545;
+				color: #efefef;
+			}
+			.divItemExample {
+				text-align: center;
+			}
+			.divItemExample img {
+				margin: 0px 10px 0px 10px;
+			}
+		</style>
+	</head>
+	<body><div id="divMain">
+		
+		<img src=".\Logo.png" style="max-width: 700px; width: auto; height: auto; margin-top: 70px; margin-bottom: 0px;">
+		<h1>Tutorial</h1>
+		
+		<h2>Requirements</h2>
+		
+		<p>If you want to make modifications to the existing icons or draw your own, you can, of course, use your preferred image editing software and reproduce the style, but if you want to draw in an identical fashion, I would recommend giving <a href="http://krita.org" target="_blank">Krita</a> a shot. It's a free and amazing painting software I can't recommend enough. For digital drawing, I'm using a Wacom graphics tablet, but a mouse will do if necessary. For actual image editing in terms of cropping, positioning and post-processing the final icons, I use the free software <a href="http://gimp.org" target="_blank">GIMP</a>, but for this asset pack, I generate the icons directly from my Krita file with the help of a little tool.</p>
+		
+		<div style="overflow: hidden; width: 1024px; height: 514px; margin: 20px 0px 20px -162px;"><img src=".\Tutorial Files\sprite_sheet.png"></div>
+		
+		<p>This tutorial is limited to explaining how the icons were created and how the given Krita source file <i>Showcase.kra</i> is structured, so I won't cover how Krita works; check out their <a href="https://docs.krita.org/en/tutorials.html" target="_blank">tutorials</a> for that purpose.</p>
+				
+		<h2>Colors</h2>
+		
+		<p>The color palette covers:</p>
+		
+		<table class="tableColors">
+			<tr>
+				<td style="width: 120px; background-color: #ffffff">&#35;ffffff</td>
+				<td style="padding-left: 20px;">White (for special cases only)</td>
+			</tr>
+			<tr>
+				<td>&#35;efefef</a></td>
+				<td style="padding-left: 20px;">Light</td>
+			</tr>
+			<tr>
+				<td style="background-color: #cfcfcf">&#35;cfcfcf</td>
+				<td style="padding-left: 20px;">Medium</td>
+			</tr>
+			<tr>
+				<td style="background-color: #b8b8b8">&#35;b8b8b8</td>
+				<td style="padding-left: 20px;">Dark</td>
+			</tr>
+			<tr>
+				<td style="background-color: #454545; color: #efefef;">&#35;454545</td>
+				<td style="padding-left: 20px;">Lining</td>
+			</tr>
+		</table>
+		
+		<p>I will refer to these colors as <span class="spanColor spanLight">Light</span>, <span class="spanColor spanMedium">Medium</span>, <span class="spanColor spanDark">Dark</span> and <span class="spanColor spanLining">Lining</span>. I'm not using actual black and white for the linings and filling, because it looks kind of harsh. If you need them, you can increase the contrast in the sprite sheets with an image editing program.</p>
+		
+		<h2>Style Variants</h2>
+		
+		<p>The icons come in four variants: <i>Black and White</i> (bw), <i>Grayscale</i> (grayscale), <i>Light</i> (light), <i>White</i> (white) and <i>Lining</i> (lining). All of them use the color <span class="spanColor spanLining">Lining</span> for the linework.</p>
+		
+		<div style="text-align: center"><img src=".\Tutorial Files\style_variants.png"></div>
+		
+		<p>The variant <i>Lining</i> is fully transparent within and outside of the linework: it's the best starting point when you want to make your own fillings. The variants <i>White</i> is filled with <span class="spanColor spanWhite">White</span> within the linework as a kind of special case. I would rather recommend <i>Light</i>, which is filled with the <span class="spanColor spanLight">Light</span> color instead. The <i>Grayscale</i> variant is my favorite: it's filled with <span class="spanColor spanMedium">Medium</span>, while shadows have the color <span class="spanColor spanDark">Dark</span> and highlights are drawn with <span class="spanColor spanLight">Light</span>. The final variant <i>Black and White</i> has a <span class="spanColor spanLight">Light</span> filling and shadows in the <span class="spanColor spanLining">Lining</span> color with additional linework in <span class="spanColor spanLight">Light</span> on top.</p>
+		
+		<h2>Brushes</h2>
+		
+		<p>Now to the most important part, the brushes. In Krita, the brush used for the linings is called <i>ink-1 precision</i>. It can be found in the <i>Ink</i> category. I've edited the brush settings of this brush so <i>Size</i> and <i>Softness</i> don't respond to <i>Speed</i> as well as so there's no change in <i>Opacity</i> depending on the pen pressure (if you draw with a graphics tablet). If you don't change that, fast movements with the mouse or pen will lead to gaps in the drawing, which is something we don't want if we do linework.</p>
+		
+		<table style="margin: 0px auto; margin-top: 35px">
+			<tr style="border: 0px;">
+				<td style="width: 300px; text-align: center;"><img src=".\Tutorial Files\ink_precision.png"><br><p style="font-size: 14pt; text-align: center">Ink-1 Precision</p></td>
+				<td style="width: 300px; text-align: center;"><img src=".\Tutorial Files\ink_fineliner.png"><br><p style="font-size: 14pt; text-align: center">Ink-2 Fineliner</p></td>
+			</tr>
+		</table>
+		
+		<p>For the sketches, I draw with <i>ink-1 precision</i> in brush size 3.0, opacity 10% and color <span class="spanColor spanLining">Lining</span>. The actual linework, including outlines and inner details, are done on a separate layer on top, in size 3.0 and opacity 100% with the same brush type and color.</p>
+		
+		<p>The filling is done on a separate layer below the linework's layer. You can hide the sketching layer after you finished the linework. The filling colors depend on the style variant you want to reproduce. They were explained in the previous section. For filling out larger sections, I'll recommend to use <i>ink-2 fineliner</i> with the same changes to the brush settings as explained above. I've actually created an additional <i>ink-1 precision</i> and <i>ink-2 fineliner</i> variant where the size grows on pressure, which makes filling out smaller and larger parts even more comfortable. But that's not really necessary.</p>
+		
+		<h2>Drawing</h2>
+		
+		<p>The source file <i>Showcase.kra</i> comes with a layer group <i>ICON BACKGROUNDS</i> in which you'll find a layer <i>corner light</i> which contains icon backgrounds consisting of four little marks in the corner of each icon. It's the most fitting one to draw your own icons in. You could copy some of those and paste them below the other icons to have a row of empty icon backgrounds to draw in.</p>
+		
+		<p>Zoom in while drawing and, if required, rotate the canvas to be more accurate when drawing in certain angles. The brush tool has a stabilizer you can toggle on to make longer lines more smoothly. Draw by moving the wrist, not the arm. If you do linework, put <i>Undo</i> and <i>Toggle Eraser</i> on some shortcut keys (one of my left fingers is usually placed on one of them).</p>
+		
+		<h2>Style Guidelines</h2>
+		
+		<p>The following guidelines refer to how this specific set of icons was drawn.</p>
+		
+		<ul>
+			<li>Be abstract enough, so the items can be identified from their silhouette.</li>
+			<li>Don't be too detailed. Use little cracks and irregularities (see the <i>Stone</i> item) sparingly.</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\stone.png"></div>
+			<li>Detail lines try to stand free from any other lines (check the little lines on the tool item handles like the <i>Pickaxe</i>), except if there isn't enough space (see <i>Carrot</i>) or if it's rough wood (compare <i>Bark</i> with <i>Wood</i> and <i>Root</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\pickaxe.png"><img src=".\Tutorial Files\carrot.png"><img src=".\Tutorial Files\bark.png"><img src=".\Tutorial Files\wood.png"><img src=".\Tutorial Files\root.png"></div>
+			<li>Don't put too many detail lines in close space. One accentuation is usually enough.</li>
+			<li>Detail lines often consist of a line to indicate the 3-dimensional shape of the object (like if it's curvy), then followed by a little dot or shorter line. This is a recurring style element. Check out the <i>Beet</i>, the <i>Mushroom</i>, the <i>Pickaxe</i> and the <i>Glove</i> as examples.</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\beet.png"><img src=".\Tutorial Files\mushroom.png"><img src=".\Tutorial Files\pickaxe.png"><img src=".\Tutorial Files\glove.png"></div>
+			<li>Items which are held in a hand have a cloth wrapping at the location where they are held (see <i>Sword</i> or <i>Bow</i>). The wrapping always has the same color.</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\sword.png"><img src=".\Tutorial Files\bow.png"></div>
+			<li>When coloring, <span class="spanColor spanMedium">Medium</span> is the main color in the <i>Grayscale</i> style variant and <span class="spanColor spanLight">Light</span> in the <i>Black and White</i> variant. These colors should take the most space for most of the items.</li>
+			<li>Lines do not collapse to form thicker lines.</li>
+			<li>The color <span class="spanColor spanLining">Lining</span> should only be used as a filling color in the <i>Grayscale</i> variant, if it reaches inside the item (see <i>Boot</i> or <i>Skull</i>) or in special cases where it's kind of expected (see <i>Bomb</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\boot.png"><img src=".\Tutorial Files\skull.png"><img src=".\Tutorial Files\bomb.png"></div>
+			<li>The light comes usually from the left or top-left, except if the item points with its biggest surface into a different direction (see <i>Backpack</i>) or if the item is shown in a symmetric fashion (see <i>Armor</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\backpack.png"><img src=".\Tutorial Files\armor.png"></div>
+			<li>A single round dot as a highlight on the biggest surface is preferred (see <i>Liquid</i> or <i>Apple</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\liquid.png"><img src=".\Tutorial Files\apple.png"></div>
+			<li>Grass patches and feathers have a fluffyness to them (see <i>Arrow</i> or <i>Turf</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\arrow.png"><img src=".\Tutorial Files\turf.png"></div>
+			<li>Similar items look similar (see <i>Crate</i> and <i>Barrel</i> or <i>Stick</i> and <i>Branch</i>).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\crate.png"><img src=".\Tutorial Files\barrel.png"><img src=".\Tutorial Files\stick.png"><img src=".\Tutorial Files\branch.png"></div>
+			<li>All items with a handle (check the tool items) have a similar looking but not identical handle, with different cloth wrapping and detail lining.</li>
+			<li>Use a single line without an inner part only if it's a thread or line which couldn't be replaced with, let's say, a leather strap. See <i>Bow</i> or <i>Fishing Rod</i>, which would look confusing if the line had a thickness. Compare that to the <i>Ball of Wool</i> or the <i>Amulet</i>, where you can get away with a thick line.</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\bow.png"><img src=".\Tutorial Files\fishing_rod.png"><img src=".\Tutorial Files\ball_of_wool.png"><img src=".\Tutorial Files\amulet.png"></div>
+			<li>Try to fill out the whole icon space, even if the item is very small in comparison (compare the sizes of the <i>Key</i> with the <i>Armor</i> as an example).</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\key.png"><img src=".\Tutorial Files\armor.png"></div>
+			<li>Flames consist of a main flame and little secondary flames. The main flame has one inner part in a darker color. Compare <i>Campfire</i> with the <i>Lantern</i>.</li>
+			<div class="divItemExample"><img src=".\Tutorial Files\campfire.png"><img src=".\Tutorial Files\lantern.png"></div>
+		</ul>
+		
+		<h2>Filter Layer Trickery</h2>
+		
+		<p>As I had to draw the filling in various styles, I didn't want to re-draw the basic filling color which fills out the whole inner part of the linework over and over again. If you have a look at the <i>ICONS&#8594;ICON FILLING PLAIN</i> layer group, you'll notice a layer called <i>white</i>. It contains the actual filling of the icons in <span class="spanColor spanWhite">White</span>. On top, there is a layer <i>medium</i>. It's a filter layer <i>Adjust&#8594;HSV/HSL Adjustment</i>, which, when visible, modifies the color of the white filling into a <span class="spanColor spanMedium">Medium</span> color for the <i>Grayscale</i> style variant. Correspondingly, the filter layers <i>light 1</i> and <i>light 2</i>, if both visible at the same time, change the white filling into the <span class="spanColor spanLight">Light</span> color for the <i>Black and White</i> and <i>Light</i> style variants (the <i>medium</i> has to be hidden and vice versa). I had to run the white filling through the two filter layers <i>light 1</i> and <i>light 2</i>, because I couldn't exactly hit the <span class="spanColor spanLight">Light</span> color with one HSV/HSL adjustment alone.</p>
+		
+		
+		<h2>Source File Structure</h2>
+		
+		<p>The topmost layer groups are:
+		
+		<table>
+			<tr>
+				<td style="width: 270px">ICONS</td>
+				<td>Contains all the icon linework, sketches and fillings.</td>
+			</tr>
+			<tr>
+				<td>ADDITIONAL</td>
+				<td>Contains the item names and the white banner behind the names.</td>
+			</tr>
+			<tr>
+				<td>ICON BACKGROUNDS</td>
+				<td>Contains various item backgrounds you can switch through to see the resulting icons with different item backgrounds.</td>
+			</tr>
+			<tr>
+				<td>BACKGROUND</td>
+				<td>The showcase background, including the logo and decorational elements. Hide this whole group if you want to export icons.</td>
+			</tr>
+		</table>
+		
+		<p>Within the <i>ICONS</i> layer group, you'll find the following groups:</p>
+		
+		<table>
+			<tr>
+				<td style="width: 270px">ICON LININGS</td>
+				<td>The heart of the source file. The linework is split into a <i>lining</i> layer with the important lines and a <i>details</i> layer for additional decoration. The layer <i>bw white overlining</i> should be made visible only if you want to display the <i>Black and White</i> style variant, as it contains lighter detail linework which only makes sense on the dark shades of the filling layer in the <i>ICON FILLING BW</i> layer group.</td>
+			</tr>
+			<tr>
+				<td>ICON FILLING BW</td>
+				<td>Contains the <span class="spanColor spanLining">Lining</span>-colored filling. The lighter detail linework can be found in the <i>ICON LININGS</i> layer group above.</td>
+			</tr>
+			<tr>
+				<td>ICON FILLING GRAYSCALE</td>
+				<td>Contains the icon fillings for the <i>Grayscale</i> variant. The layer <i>shade ink</i> holds shading in the <span class="spanColor spanLining">Lining</span> color for special cases, like the eyeholes of the skull icon or the bomb icon's body.</td>
+			</tr>
+			<tr>
+				<td>ICON FILLING PLAIN</td>
+				<td>Contains very basic filling within the icons' linework. The previous section explains the effect layers <i>medium</i>, <i>light 1</i> and <i>light 2</i>.</td>
+			</tr>
+			<tr>
+				<td>ICON SKETCHES</td>
+				<td>Contains rough little sketches I drew the lineworks on. Hidden by default.</td>
+			</tr>
+		</table>
+		
+		<h2>Just Draw</h2>
+		
+		<p>You don't have to use the complicated layer group structure I've used. I had to, because I've got a little tool which cuts out the icons from this showcase file and generates all the single icon files and sprite sheets in the different variants. If I were you, I would make a bunch of new layers on top for the sketches, the linings and the single filling colors and draw over the existing icons (if you want to make modifications) or copy a bunch of icon backgrounds below the last row of icons and draw new icons there.</p>
+		
+		<h2>Trick to Move Icons</h2>
+		
+		<p>To move icons as a whole, across all layer groups and layers within, use the <i>Rectangular Selection</i> tool and select the icon. Then, instead of using the <i>Move</i> tool, use the <i>Transformation</i> tool instead, as the movement done with this one can be applied on a layer group. The <i>Move</i> tool only works on single layers, sadly.</p>
+		
+		<h2>Closing Words</h2>
+		
+		<p>If you have questions and need help, please join <a href="http://discord.stevencolling.com" target="_blank">my Discord channel</a>. I'm usually lurking around there most of the time! You can drop me a <a href="mailto:info@stevencolling.com">mail</a> too, of course. I also have a <a href="http://mailinglist.stevencolling.com/game_assets/" target="_blank">mailing list</a> where all the cool people hang around, and me.</p>
+		
+		<p style="text-align: center; font-size: 6pt; margin-top: 400px;">Thank you!</p>
+		
+	</div></body>
+</html>
