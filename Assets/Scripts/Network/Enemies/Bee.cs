@@ -51,7 +51,7 @@ public class Bee : MonoBehaviourPun, RisingEnemy
     }
 
     
-    
+    // just adds a little delay so the bee isn't deadly on spawning
     IEnumerator MakeLive()
     {
         yield return new WaitForSeconds(timeTillLive);

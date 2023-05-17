@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4711043926980029100}
   - component: {fileID: 735667251984598349}
   - component: {fileID: 8130690510510730954}
+  - component: {fileID: 5888854253636788526}
   m_Layer: 7
   m_Name: stone_base
   m_TagString: Pickable
@@ -193,6 +194,18 @@ MonoBehaviour:
   forceMultiplier: 100
   airMultiplier: 100
   groundBallActive: 1.5
+--- !u!114 &5888854253636788526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4708552927728859329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a0843259c364984a807bb2f997da6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7305106264748355019
 GameObject:
   m_ObjectHideFlags: 0
