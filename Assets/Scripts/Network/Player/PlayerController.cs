@@ -97,6 +97,12 @@ public class PlayerController : MonoBehaviourPunCallbacks, IPunObservable, Playe
             {
                 if (risingPickup.CheckIfHeld()) return;
             }
+
+            /*if(pickup.TryGetComponent(out IF_Carryable carryable))
+            {
+                if (carryable.Held()) return;
+                carryable.PickUp(this);
+            }*/
             
 
             if (_heldItem != null) DropItem();

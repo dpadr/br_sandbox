@@ -47,6 +47,12 @@ MonoBehaviour:
   - RevivePlayer
   - Drop
   - IncreaseBaseball
+  - AddEntity
+  - RemoveEntity
+  - SetState
+  - PickUp
+  - PutDown
+  - TakeDamage
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
