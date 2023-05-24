@@ -33,6 +33,15 @@ public class GenericBall : RisingPickup, RisingInteractable
             print(name + " hp " + _hitPoints);
             _hitPoints--;
         }
+
+        if (BaseballManager.Instance)
+        {
+            //todo: null check?
+            
+            BaseballManager.Instance.RegisterBaseballEvent(new BaseballEvent(BaseballEvent.BaseballEventType.Hit, transform.position));
+            
+            // todo: when the ball lands, send another event 
+        }
     }
 
 
