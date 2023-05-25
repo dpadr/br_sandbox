@@ -6,7 +6,7 @@ using Photon.Realtime;
 
 public abstract class BR_Entity : MonoBehaviourPun, IPunOwnershipCallbacks
 {
-    private List<BR_Component> _components;
+    private List<BR_Component> _components = new List<BR_Component>();
     protected abstract void OnUpdate();
     public enum EntityState
     {
