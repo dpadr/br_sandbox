@@ -59,7 +59,10 @@ public abstract class BR_Entity : MonoBehaviourPun, IPunOwnershipCallbacks
 
     private void OnDestroy()
     {
-        BR_EntityManager.Instance.RemoveEntity(this);
+        if (BR_EntityManager.Instance != null)
+        {
+            BR_EntityManager.Instance.RemoveEntity(this);
+        }
     }
 
     public void OnOwnershipRequest(PhotonView targetView, Player requestingPlayer)
