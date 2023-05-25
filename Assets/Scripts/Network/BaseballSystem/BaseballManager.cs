@@ -3,30 +3,29 @@ using System.Collections.Generic;
 using Photon.Pun;
 using UnityEngine;
 
-// these classes stored here only temporarily 
+/*
+ * OK, SO:
+ * Entities doing baseball events (aka: doing baseball things) on local client will
+ * get validated via events here. If they are valid, this script will (also) call events to
+ * update the state of various client-local objects (like the baseball meter)
+ * This way any client who does a 'baseball thing' will be reporting to manager via RPC.
+ * The baseball value can then be read directly by the UI on each client 
+ *
+ * This implies that each clients baseball manager will need to be up to date with the
+ * the current state of 'baseball' in order to do the verification process. So we find out
+ * who is the master client and only that client does the updates on the baseball state
+ * but we still propagate state updates to all clients in case master client drops.
+ *
+ * Lastly, the incoming 'baseball events' should be their own type so that we can
+ * differentiate and perhaps grade the types of events for things like achievements but
+ * mainly to provide appropriate feedback to the player. (Same for blueprint events)
+ */ 
 
 public class BaseballManager : MonoBehaviourPun, IPunObservable
 {
     private int _baseballLevel;
     private BaseballCondition _currentBaseballCondition;
     public GameObject[] temporaryBases;
-    
- /*
-  * OK, SO:
-  * Entities doing baseball events (aka: doing baseball things) on local client will
-  * get validated by this script.  If they are valid, they will write directly to the network
-  * 'baseball value'. This way any client who does a 'baseball thing' will be reporting.
-  * The baseball value can then be read directly by the UI on each client 
-  *
-  * This implies that each clients baseball manager will need to be up to date with the
-  * the current state of 'baseball' in order to do the verification process.
-  * todo: this should probably be its own data structure
-  *
-  * Lastly, the incoming 'baseball events' should be their own type so that we can
-  * differentiate and perhaps grade the types of events for things like achievements but
-  * mainly to provide appropriate feedback to the player.
-  * 
-  */ 
     
     #region singleton
 
@@ -69,12 +68,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     {
         if (PhotonNetwork.IsMasterClient) _baseballLevel++;
     }
-
-    private void Update()
-    {
-        UpdateBaseballState();
-    }
-
+    
     private void UpdateBaseballState()
     {
         if (!PhotonNetwork.IsMasterClient) return;
@@ -87,7 +81,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     private void InitBaseballState()
     {
         // (temp) manually set bases
-        _currentBaseballCondition = new BaseballCondition(temporaryBases[0], BaseballCondition.BasePosition.Home);
+        _currentBaseballCondition = new BaseballCondition();
     }
 
     public void RegisterBaseballEvent (BaseballEvent baseballEvent) {
@@ -95,6 +89,15 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         // if true: grade the event and propagate changes
         
         // if false: grade the event 
+    }
+    
+    
+
+    public bool RegisterBlueprintEvent()
+    {
+        // todo: do blueprints have their own events?
+
+        return true;
     }
     
     /*

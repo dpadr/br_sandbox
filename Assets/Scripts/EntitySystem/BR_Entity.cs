@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,13 +7,18 @@ using Photon.Realtime;
 
 public abstract class BR_Entity : MonoBehaviourPun, IPunOwnershipCallbacks
 {
-    private List<BR_Component> _components = new List<BR_Component>();
+    private List<BR_Component> _components;
     protected abstract void OnUpdate();
     public enum EntityState
     {
         Active,
         Inactive,
         Destroy
+    }
+
+    private void Awake()
+    {
+        _components = new List<BR_Component>();
     }
 
     private void Update()
