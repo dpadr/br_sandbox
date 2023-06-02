@@ -10,13 +10,19 @@ public class GenericBall : RisingPickup, RisingInteractable
 {
     private bool _canBeHit = true;
     protected int _hitPoints = -1;
-    
+    public static Action<BaseballEvent> BallgameEvent;
+
     [SerializeField] private float triggerActiveDelay = .1f;
     [SerializeField] private float forceMultiplier = 50;
     [SerializeField] private float airMultiplier = 50;
     [SerializeField] private float groundBallActive = 1.5f;
     public void Interact() {}
-    
+
+    private static void CallBaseballEvent(BaseballEvent theEvent)
+    {
+        BallgameEvent.Invoke(theEvent);
+    }
+
     [PunRPC]
     public void Hit(Vector3 pos, float power)
     {
@@ -26,6 +32,10 @@ public class GenericBall : RisingPickup, RisingInteractable
         _rigidbody.isKinematic = false;
         _rigidbody.AddForceAtPosition(Vector3.forward * power + Vector3.up * power +  Vector3.left * power, pos, ForceMode.Impulse);
         print(name + " was hit !");
+        
+        var newEvent = new BaseballEvent(global::BaseballEvent.BaseballEventType.Hit, transform.position);
+        CallBaseballEvent(newEvent);
+        
         if (_hitPoints == -1) return;
         if (_hitPoints == 0) ItemDestroyed();
         if (_hitPoints > 0)
@@ -34,14 +44,7 @@ public class GenericBall : RisingPickup, RisingInteractable
             _hitPoints--;
         }
 
-        if (BaseballManager.Instance)
-        {
-            //todo: null check?
-            
-            BaseballManager.Instance.RegisterBaseballEvent(new BaseballEvent(BaseballEvent.BaseballEventType.Hit, transform.position));
-            
-            // todo: when the ball lands, send another event 
-        }
+
     }
 
 
@@ -97,5 +100,12 @@ public class GenericBall : RisingPickup, RisingInteractable
                 sceneryItem.TriggerParticle();
             }
         }
+    }
+
+    public event Action<BaseballEvent> BaseballEvent;
+
+    public void BroadcastEvent(BaseballEvent baseballEvent)
+    {
+        
     }
 }

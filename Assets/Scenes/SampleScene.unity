@@ -6905,6 +6905,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1146546251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708552927728859329, guid: 7460448d647514caf8889abb60920f0e, type: 3}
+  m_PrefabInstance: {fileID: 1042300982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1158108424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7716,6 +7721,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1382231268112906588, guid: 36e967ebb583b99418c55ca16f364d8d, type: 3}
   m_PrefabInstance: {fileID: 1727208650}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1355715560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708552927728859329, guid: 7460448d647514caf8889abb60920f0e, type: 3}
+  m_PrefabInstance: {fileID: 1832470967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1379174162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8047,6 +8057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440849419}
   - component: {fileID: 1440849420}
+  - component: {fileID: 1440849421}
   m_Layer: 0
   m_Name: BaseballManager
   m_TagString: Untagged
@@ -8081,6 +8092,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1870961704c0b4c14932fe6d4a498efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  temporaryBases:
+  - {fileID: 1146546251}
+  - {fileID: 1782611315}
+  - {fileID: 2060558961}
+  - {fileID: 1355715560}
+  infieldColor: {r: 0.745283, g: 0.15819688, b: 0.15819688, a: 0.54901963}
+--- !u!114 &1440849421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440849418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 60
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &1446403784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9043343887258926632, guid: 25499527898c0994298bbf33f4e0a5ce, type: 3}
@@ -10239,6 +10278,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7460448d647514caf8889abb60920f0e, type: 3}
+--- !u!1 &1782611315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708552927728859329, guid: 7460448d647514caf8889abb60920f0e, type: 3}
+  m_PrefabInstance: {fileID: 1771434840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811975224
 GameObject:
   m_ObjectHideFlags: 0
@@ -11168,6 +11212,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9043343887258926632, guid: 25499527898c0994298bbf33f4e0a5ce, type: 3}
   m_PrefabInstance: {fileID: 1111111109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2060558961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4708552927728859329, guid: 7460448d647514caf8889abb60920f0e, type: 3}
+  m_PrefabInstance: {fileID: 7320287916942896109}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2083004929 stripped
 Transform:
