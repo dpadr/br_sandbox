@@ -53,6 +53,7 @@ MonoBehaviour:
   - PickUp
   - PutDown
   - TakeDamage
+  - Held
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
