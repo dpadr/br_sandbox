@@ -33,10 +33,11 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     
     private int _baseballLevel;
     private BaseballCondition _currentBaseballCondition;
-    private Dictionary<BaseballEvent, float> _eventLog = new Dictionary<BaseballEvent, float>();
+    private Dictionary<BaseballAction, float> _eventLog = new Dictionary<BaseballAction, float>();
 
     private void Start()
     {
+        /* temp stuff: eventually the blueprints will handle base setup */
         _currentBaseballCondition = new BaseballCondition();
         _currentBaseballCondition.AddBase(temporaryBases[0], BaseballCondition.Bases.Home);
         _currentBaseballCondition.AddBase(temporaryBases[1], BaseballCondition.Bases.First);
@@ -66,7 +67,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     #region photon
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (stream.IsWriting)
+        if (stream.IsWriting) // todo: and is master?
         {
             // We own this player: send the others our data
             stream.SendNext(_baseballLevel);
@@ -78,31 +79,68 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
             // Network player, receive data
             this._baseballLevel = (int)stream.ReceiveNext();
             this._currentBaseballCondition = (BaseballCondition)stream.ReceiveNext();
-            this._eventLog = (Dictionary<BaseballEvent, float>)stream.ReceiveNext();
+            this._eventLog = (Dictionary<BaseballAction, float>)stream.ReceiveNext();
             
             //todo: does it receive a reference or the actual object??
         }
     }
     #endregion
-    [ContextMenu("RegisterEvent")]
-    public void RegisterBaseballEvent (BaseballEvent baseballEvent)
+    
+    private void RegisterBaseballEvent (BaseballAction baseballAction)
     {
+        /*
+         * 
+         */
+        
+        
         if (!PhotonNetwork.IsMasterClient) return;
         
-        if (_currentBaseballCondition == null) _currentBaseballCondition = new BaseballCondition();
         
-        // if true: grade the event and propagate changes
+        // this can probably be handled elsewhere and once?
+        if (_currentBaseballCondition == null) _currentBaseballCondition = new BaseballCondition();
 
-        print(baseballEvent);
-        _eventLog.Add(baseballEvent, Time.time); 
-        UpdateBballStatus(_currentBaseballCondition.ValidateBballEvent(baseballEvent));
+        if (baseballAction.Event == BaseballAction.BballActionType.Ignore)
+        {
+            Debug.Log("Baseball Event Ignored");
+            return;
+        }
+        
+        _eventLog.Add(baseballAction, Time.time); // log & eventually display this at least for debug purposes
+
+        
+        
+        if (baseballAction.Event == BaseballAction.BballActionType.Result)
+        {
+            GradeBballAction(baseballAction);
+            return;
+        }
+        
+        
+        RegisterBaseballEvent(_currentBaseballCondition.ValidateBballEvent(baseballAction));
         // if false: grade the event 
+        
     }
+    
+    
 
-    private void UpdateBballStatus(BaseballStatus status)
+    private void GradeBballAction(BaseballAction baseballAction)
     {
-        _baseballLevel += (int) status;
-        print("baseball meter :" + _baseballLevel);
+        switch (baseballAction.Result)
+        {
+            case BaseballAction.BballResultType.None:
+                Debug.Log("Baseball Event Result Ignored");
+                return;
+            case BaseballAction.BballResultType.Hit:
+                print(baseballAction.Magnitude);
+                break;
+            case BaseballAction.BballResultType.BaseRun:
+                print("so and so ran a base!");
+                break;
+        }
+        
+        
+        // todo: 'score' the baseball-ey-ness
+        // todo: fire off resulting events (increment the meter, etc) 
     }
     
     public bool RegisterBlueprintEvent()
@@ -138,22 +176,20 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         Gizmos.color = infieldColor;
         Gizmos.DrawCube(_currentBaseballCondition.Infield.center, _currentBaseballCondition.Infield.size);
         Gizmos.color = outfieldColor;
-        Gizmos.DrawCube(_currentBaseballCondition.Outfield.center, _currentBaseballCondition.Outfield.size);
+        Gizmos.DrawCube(_currentBaseballCondition.WholeField.center, _currentBaseballCondition.WholeField.size);
+        
     }
 
     private void OnEnable()
     {
         //todo: migrate to entity system
         GenericBall.BallgameEvent += RegisterBaseballEvent;
+        BR_BballBase.BallgameEvent += RegisterBaseballEvent;
     }
 
     private void OnDisable()
     {
         GenericBall.BallgameEvent -= RegisterBaseballEvent;
+        BR_BballBase.BallgameEvent -= RegisterBaseballEvent;
     }
-}
-
-public enum BaseballStatus
-{
-    None, Minor, Medium, Major
 }

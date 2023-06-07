@@ -9,8 +9,11 @@ using VectorForestScenery;
 public class GenericBall : RisingPickup, RisingInteractable
 {
     private bool _canBeHit = true;
+    private bool _ballIsLive, _ballIsAirborne;
+    
     protected int _hitPoints = -1;
-    public static Action<BaseballEvent> BallgameEvent;
+    
+    public static Action<BaseballAction> BallgameEvent;
 
     [SerializeField] private float triggerActiveDelay = .1f;
     [SerializeField] private float forceMultiplier = 50;
@@ -18,9 +21,9 @@ public class GenericBall : RisingPickup, RisingInteractable
     [SerializeField] private float groundBallActive = 1.5f;
     public void Interact() {}
 
-    private static void CallBaseballEvent(BaseballEvent theEvent)
+    private static void CallBaseballEvent(BaseballAction theAction)
     {
-        BallgameEvent.Invoke(theEvent);
+        BallgameEvent.Invoke(theAction);
     }
 
     [PunRPC]
@@ -32,10 +35,14 @@ public class GenericBall : RisingPickup, RisingInteractable
         _rigidbody.isKinematic = false;
         _rigidbody.AddForceAtPosition(Vector3.forward * power + Vector3.up * power +  Vector3.left * power, pos, ForceMode.Impulse);
         print(name + " was hit !");
-        
-        var newEvent = new BaseballEvent(global::BaseballEvent.BaseballEventType.Hit, transform.position);
+
+        _ballIsLive = true;
+        _ballIsAirborne = true;
+
+        var newEvent = new BaseballAction(BaseballAction.BballActionType.Hit, transform.position, this.gameObject, "temp");
         CallBaseballEvent(newEvent);
         
+        /* not sure what this is about any more */
         if (_hitPoints == -1) return;
         if (_hitPoints == 0) ItemDestroyed();
         if (_hitPoints > 0)
@@ -102,10 +109,4 @@ public class GenericBall : RisingPickup, RisingInteractable
         }
     }
 
-    public event Action<BaseballEvent> BaseballEvent;
-
-    public void BroadcastEvent(BaseballEvent baseballEvent)
-    {
-        
-    }
 }
