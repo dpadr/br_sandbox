@@ -23,7 +23,7 @@ public class GenericBall : RisingPickup, RisingInteractable
 
     private static void CallBaseballEvent(BaseballAction theAction)
     {
-        BallgameEvent.Invoke(theAction);
+        BallgameEvent?.Invoke(theAction);
     }
 
     [PunRPC]

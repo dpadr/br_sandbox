@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Android;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 /*
@@ -27,16 +28,50 @@ using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class BaseballManager : MonoBehaviourPun, IPunObservable
 {
+    [Header("Temp")]
     public GameObject[] temporaryBases;
-
+    [Header("Debug")]
     [SerializeField] private Color infieldColor, outfieldColor;
     
+    [Header("Settings")]
+    [Tooltip("In seconds")][SerializeField] private int meterDrainFrequency = 5;
+    [SerializeField] private int meterDrainAmount = 2;
+    [SerializeField] private bool isMeterRunning;
+    [SerializeField] private Vector2Int meterDefaultMax;
+
+    public Vector2Int MeterDefaultMax => meterDefaultMax;
+
+    private float _meterTimeRemaining;
     private int _baseballLevel;
+    private int _currentLevel;
+    public int BaseballLevel
+    {
+        get => _currentLevel;
+
+        private set
+        {
+            if (value != _currentLevel)
+            {
+                _currentLevel = value;
+                UpdateMeterUI();
+            }
+        }
+    }
+
+    private void UpdateMeterUI()
+    {
+        UpdateBballMeter?.Invoke(BaseballLevel); 
+    }
+
     private BaseballCondition _currentBaseballCondition;
     private Dictionary<BaseballAction, float> _eventLog = new Dictionary<BaseballAction, float>();
 
+    public static event Action<int> UpdateBballMeter;
+    
     private void Start()
     {
+        isMeterRunning = true;
+        BaseballLevel = meterDefaultMax.x;
         /* temp stuff: eventually the blueprints will handle base setup */
         _currentBaseballCondition = new BaseballCondition();
         _currentBaseballCondition.AddBase(temporaryBases[0], BaseballCondition.Bases.Home);
@@ -67,24 +102,24 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     #region photon
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        if (stream.IsWriting) // todo: and is master?
+        if (stream.IsWriting) // todo: can this be optimized to send more piecemeal data if necessary?
         {
             // We own this player: send the others our data
-            stream.SendNext(_baseballLevel);
-            stream.SendNext(_currentBaseballCondition);
+            stream.SendNext(_currentBaseballCondition); // does this receive a reference or the actual object??
             stream.SendNext(_eventLog);
+            stream.SendNext(BaseballLevel);
         }
         else
         {
             // Network player, receive data
-            this._baseballLevel = (int)stream.ReceiveNext();
             this._currentBaseballCondition = (BaseballCondition)stream.ReceiveNext();
             this._eventLog = (Dictionary<BaseballAction, float>)stream.ReceiveNext();
-            
-            //todo: does it receive a reference or the actual object??
+            this.BaseballLevel = (int)stream.ReceiveNext();
         }
     }
     #endregion
+    
+    
     
     private void RegisterBaseballEvent (BaseballAction baseballAction)
     {
@@ -120,24 +155,52 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         // if false: grade the event 
         
     }
+
+    private void BaseballMeterTimer()
+    {
+        //if (isMeterDrainActive)
+        // todo: hmm need to track the 'baseball value' here
+
+        if (_meterTimeRemaining > 0) _meterTimeRemaining -= Time.deltaTime;
+
+        else
+        {
+            if (_currentLevel <= 0)
+            {
+                _meterTimeRemaining = 0;
+                isMeterRunning = false;
+            }
+            else
+            {
+                BaseballLevel -= meterDrainAmount; // lower the meter
+                _meterTimeRemaining = meterDrainFrequency;
+            }
+        }
+    }
     
     
+    private void Update()
+    {
+        if (!PhotonNetwork.IsMasterClient) return; // timer runs on on master client only
+        
+        if (isMeterRunning) BaseballMeterTimer();
+    }
 
     private void GradeBballAction(BaseballAction baseballAction)
     {
         switch (baseballAction.Result)
         {
             case BaseballAction.BballResultType.None:
-                Debug.Log("Baseball Event Result Ignored");
-                return;
+                break;
             case BaseballAction.BballResultType.Hit:
-                print(baseballAction.Magnitude);
+                BaseballLevel += (int)baseballAction.Magnitude;
                 break;
             case BaseballAction.BballResultType.BaseRun:
-                print("so and so ran a base!");
+                BaseballLevel += (int)baseballAction.Magnitude;
                 break;
         }
         
+        print(baseballAction);
         
         // todo: 'score' the baseball-ey-ness
         // todo: fire off resulting events (increment the meter, etc) 
@@ -185,6 +248,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         //todo: migrate to entity system
         GenericBall.BallgameEvent += RegisterBaseballEvent;
         BR_BballBase.BallgameEvent += RegisterBaseballEvent;
+        UpdateBballMeter?.Invoke(BaseballLevel);
     }
 
     private void OnDisable()

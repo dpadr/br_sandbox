@@ -49,6 +49,6 @@ public class BR_BballBase : BR_Structure
 
     private static void CallBaseballEvent(BaseballAction action)
     {
-        BallgameEvent.Invoke(action); // todo: possible null ref?
+        BallgameEvent?.Invoke(action); // todo: possible null ref?
     }
 }

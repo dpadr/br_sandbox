@@ -10,8 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/BaseballSystem/BaseballManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Network/BaseballSystem/BaseballMeter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseballSystem/BaseballMeter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684262058744</updated>
       <workItem from="1684262070966" duration="7479000" />
-      <workItem from="1684940398109" duration="71111000" />
+      <workItem from="1684940398109" duration="84175000" />
     </task>
     <servers />
   </component>

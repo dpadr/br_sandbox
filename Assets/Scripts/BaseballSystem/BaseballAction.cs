@@ -9,7 +9,7 @@ public class BaseballAction
     }
     public enum BballEventMagnitude // not sure if this is needed
     {
-        Low, Med, High
+        Low = 2, Med = 4, High = 6
     }
     
     public enum BballResultType
@@ -48,6 +48,11 @@ public class BaseballAction
     
     public override string ToString()
     {
-        return "Bball Event:" + Event + " At:" + EventPos;
+        return Event switch
+        {
+            BballActionType.Ignore => "Baseball event ignored",
+            BballActionType.Result => "Baseball Result: " + Result + "w/ Mag: " + Magnitude,
+            _ => Player + "did Baseball Event:" + Event + " At:" + EventPos
+        };
     }
 }
