@@ -8,7 +8,7 @@ public class BR_PlayerController : BR_Creature
 {
     private Rigidbody _rb;
     private Collider _collider;
-    private Vector2 _moveInput;
+    [HideInInspector] public Vector2 _moveInput;
     [HideInInspector] public bool _isGrounded, _isFlipped, _isBackwards, _isCamActive, _flipX, _isDead;
     [HideInInspector] public Animator _playerOrientation;
     [HideInInspector] public SpriteRenderer _spriteRenderer;
@@ -31,21 +31,32 @@ public class BR_PlayerController : BR_Creature
     [SerializeField] private int hitPoints = 1;
 
 
-    // public enum PlayerState
-    // {
-    //     Running,
-    //     Jumping,
-    //     Falling,
-    //     Sliding,
-    //     Idle,
-    //     Incapacitated,
-    //     Dead
-    // }
+    public enum PlayerState
+    {
+        Running,
+        Jumping,
+        Falling,
+        Sliding,
+        Idle,
+        Incapacitated,
+        Dead
+    }
 
+    [HideInInspector] public BRL_Idle Idle;
     [HideInInspector] public BRL_Running Running;
     [HideInInspector] public BRL_Jumping Jumping;
 
     public BRL_BaseState currentState;
+    public PlayerState currentStateName;
+
+    private void Awake() {
+        Idle = new BRL_Idle();
+        Running = new BRL_Running();
+        Jumping = new BRL_Jumping();
+        changeState(Idle);
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +78,7 @@ public class BR_PlayerController : BR_Creature
    	    }
 
         // todo
+        OnUpdate();
     }
 
     protected override void OnUpdate(){
@@ -79,6 +91,7 @@ public class BR_PlayerController : BR_Creature
             currentState.OnExit();
         }
         currentState = newState;
+        currentStateName = newState.stateName;
         newState.OnEnter(this);
     }
 

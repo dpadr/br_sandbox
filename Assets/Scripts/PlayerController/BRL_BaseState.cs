@@ -11,9 +11,60 @@ public class BRL_BaseState
         
     }
 
-    public string name;
+    public BR_PlayerController.PlayerState stateName;
 
-    public virtual void OnUpdate() {}
+    public virtual void OnUpdate() {
+        pc._moveInput.x = Input.GetAxis("Horizontal");
+        pc._moveInput.y = Input.GetAxis("Vertical");
+        pc._moveInput.Normalize(); 
+
+        Rigidbody _rb = pc.GetComponent<Rigidbody>();
+        _rb.velocity = new Vector3(pc._moveInput.x * pc.getMoveSpeed(), _rb.velocity.y, pc._moveInput.y * pc.getMoveSpeed());
+
+        pc.spriteAnimator.SetFloat("moveSpeed", _rb.velocity.magnitude);
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(pc.groundPoint.position, Vector3.down, out hit, .3f, pc.groundLayer))
+        {
+            pc._isGrounded = true;
+        }
+        else pc._isGrounded = false;
+
+        pc.spriteAnimator.SetBool("onGround", pc._isGrounded);
+
+        if (!pc._isFlipped && pc._moveInput.x < 0)
+        {
+            pc._isFlipped = true;
+            //_flipX = true; // todo: this should be made observable somehow
+            //_spriteRenderer.flipX = _flipX;
+            pc.spriteAnimator.SetBool("swapX", true);
+            pc._spriteRenderer.flipX = pc.spriteAnimator.GetBool("swapX");
+            if(pc.flipEnabled) pc._playerOrientation.SetTrigger("Flip");
+        } else if (pc._isFlipped && pc._moveInput.x > 0)
+        {
+            pc._isFlipped = false;
+            //_flipX = false;
+            //_spriteRenderer.flipX = _flipX;
+            pc.spriteAnimator.SetBool("swapX", false);
+            pc._spriteRenderer.flipX = pc.spriteAnimator.GetBool("swapX");
+            if(pc.flipEnabled) pc._playerOrientation.SetTrigger("Flip");
+        }
+
+        if (!pc._isBackwards && pc._moveInput.y > 0)
+        {
+            pc._isBackwards = true;
+            if(pc.flipEnabled) pc._playerOrientation.SetTrigger("Flip");
+        } else if (pc._isBackwards && pc._moveInput.y < 0)
+        {
+            pc._isBackwards = false;
+            if(pc.flipEnabled) pc._playerOrientation.SetTrigger("Flip");
+        }
+
+        pc.spriteAnimator.SetBool("movingBackwards", pc._isBackwards);
+    }
+
+
     public virtual void OnEnter(BR_PlayerController br_pc) {
         this.pc = br_pc;
     }
