@@ -653,6 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50b41a17b140de4281db42cc0866650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveInput: {x: 0, y: 0}
   _isGrounded: 0
   _isFlipped: 0
   _isBackwards: 0
@@ -678,6 +679,9 @@ MonoBehaviour:
   moveSpeed: 1.5
   jumpForce: 4
   hitPoints: 1
+  movement: {fileID: 5657793516550593534, guid: ee4d63a204d257a41adffc136127792c, type: 3}
+  jump: {fileID: 2123386164132375035, guid: ee4d63a204d257a41adffc136127792c, type: 3}
+  currentStateName: 0
 --- !u!1 &4489059890629103275
 GameObject:
   m_ObjectHideFlags: 0

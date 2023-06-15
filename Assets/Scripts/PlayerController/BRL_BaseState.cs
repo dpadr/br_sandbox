@@ -14,8 +14,8 @@ public class BRL_BaseState
     public BR_PlayerController.PlayerState stateName;
 
     public virtual void OnUpdate() {
-        pc._moveInput.x = Input.GetAxis("Horizontal");
-        pc._moveInput.y = Input.GetAxis("Vertical");
+        pc._moveInput = pc.movement.action.ReadValue<Vector2>();
+        //pc._moveInput.y = Input.GetAxis("Vertical");
         pc._moveInput.Normalize(); 
 
         Rigidbody _rb = pc.GetComponent<Rigidbody>();

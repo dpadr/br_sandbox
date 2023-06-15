@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Cinemachine;
+using UnityEngine.InputSystem;
 
 public class BR_PlayerController : BR_Creature
 {
@@ -29,6 +30,10 @@ public class BR_PlayerController : BR_Creature
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private int hitPoints = 1;
+
+    [Header("Input Actions")]
+    [SerializeField] public InputActionReference movement;
+    [SerializeField] public InputActionReference jump;
 
 
     public enum PlayerState

@@ -11,7 +11,7 @@ public class BRL_Idle : BRL_BaseState
     public override void OnUpdate() {
         base.OnUpdate();
 
-        if (Input.GetButtonDown("Jump") && pc._isGrounded)
+        if (pc.jump.action.triggered && pc._isGrounded)
         {
             pc.changeState(pc.Jumping);
         }
