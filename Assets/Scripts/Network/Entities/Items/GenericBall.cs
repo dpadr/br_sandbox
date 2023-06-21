@@ -9,14 +9,23 @@ using VectorForestScenery;
 public class GenericBall : RisingPickup, RisingInteractable
 {
     private bool _canBeHit = true;
+    private bool _ballIsLive, _ballIsAirborne;
+    
     protected int _hitPoints = -1;
     
+    public static Action<BaseballAction> BallgameEvent;
+
     [SerializeField] private float triggerActiveDelay = .1f;
     [SerializeField] private float forceMultiplier = 50;
     [SerializeField] private float airMultiplier = 50;
     [SerializeField] private float groundBallActive = 1.5f;
     public void Interact() {}
-    
+
+    private static void CallBaseballEvent(BaseballAction theAction)
+    {
+        BallgameEvent?.Invoke(theAction);
+    }
+
     [PunRPC]
     public void Hit(Vector3 pos, float power)
     {
@@ -26,6 +35,14 @@ public class GenericBall : RisingPickup, RisingInteractable
         _rigidbody.isKinematic = false;
         _rigidbody.AddForceAtPosition(Vector3.forward * power + Vector3.up * power +  Vector3.left * power, pos, ForceMode.Impulse);
         print(name + " was hit !");
+
+        _ballIsLive = true;
+        _ballIsAirborne = true;
+
+        var newEvent = new BaseballAction(BaseballAction.BballActionType.Hit, transform.position, this.gameObject, "temp");
+        CallBaseballEvent(newEvent);
+        
+        /* not sure what this is about any more */
         if (_hitPoints == -1) return;
         if (_hitPoints == 0) ItemDestroyed();
         if (_hitPoints > 0)
@@ -34,14 +51,7 @@ public class GenericBall : RisingPickup, RisingInteractable
             _hitPoints--;
         }
 
-        if (BaseballManager.Instance)
-        {
-            //todo: null check?
-            
-            BaseballManager.Instance.RegisterBaseballEvent(new BaseballEvent(BaseballEvent.BaseballEventType.Hit, transform.position));
-            
-            // todo: when the ball lands, send another event 
-        }
+
     }
 
 
@@ -98,4 +108,5 @@ public class GenericBall : RisingPickup, RisingInteractable
             }
         }
     }
+
 }

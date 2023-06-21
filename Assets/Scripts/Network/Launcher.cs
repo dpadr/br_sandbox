@@ -8,7 +8,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 {
     #region Private Serializable Fields
     
-    [SerializeField] private GameObject controlPanel, progressLabel;
+    [SerializeField] private GameObject controlPanel, progressLabel, baseballMeter;
     [SerializeField] private byte maxPlayersPerRoom = 20;
     #endregion
 
@@ -88,6 +88,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinRandomRoom();
         progressLabel.SetActive(false);
         controlPanel.SetActive(false);
+        baseballMeter.SetActive(true);
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message)

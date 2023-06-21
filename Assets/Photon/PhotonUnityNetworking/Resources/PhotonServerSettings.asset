@@ -54,6 +54,7 @@ MonoBehaviour:
   - PutDown
   - TakeDamage
   - Held
+  - BroadcastEvent
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
