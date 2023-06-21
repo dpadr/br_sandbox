@@ -11,7 +11,7 @@ public class BRL_Idle : BRL_BaseState
     public override void OnUpdate() {
         base.OnUpdate();
 
-        if (pc.jump.action.triggered && pc._isGrounded)
+        if (pc.jump.triggered && pc._isGrounded)
         {
             pc.changeState(pc.Jumping);
         }
@@ -19,6 +19,5 @@ public class BRL_Idle : BRL_BaseState
         if (Mathf.Abs(pc._moveInput.x) > Mathf.Epsilon || Mathf.Abs(pc._moveInput.y) > Mathf.Epsilon) {
             pc.changeState(pc.Running);
         }
-        
     }
 }

@@ -1,21 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
+/*  Base State for BR_PlayerController State Machine. */
 public class BRL_BaseState
 {
+    // reference to BR_PlayerController
     protected BR_PlayerController pc; 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    // state name enum for displaying current state in BR_PlayerController
     public BR_PlayerController.PlayerState stateName;
 
+    // gets run in Update; will be built upon by other states
+    //      applies moving speed, does grounded check, flips sprites
+    //      allows for Pick Up, Drop, Pitch, Interact
     public virtual void OnUpdate() {
-        pc._moveInput = pc.movement.action.ReadValue<Vector2>();
-        //pc._moveInput.y = Input.GetAxis("Vertical");
+        pc._moveInput = pc.movement.ReadValue<Vector2>();
         pc._moveInput.Normalize(); 
 
         Rigidbody _rb = pc.GetComponent<Rigidbody>();
@@ -62,6 +63,54 @@ public class BRL_BaseState
         }
 
         pc.spriteAnimator.SetBool("movingBackwards", pc._isBackwards);
+        
+        // pick up items; cannot pick up during jumping
+        if (pc.pickup.triggered && pc._isGrounded) {
+            var pickup = pc.PickupItem();
+            if (pickup == null) return;
+            
+            if (pickup.TryGetComponent(out ReviveBuoy reviveBuoy))
+            {
+                reviveBuoy.BuoyRevive();
+                return;
+            }
+
+            if (pickup.TryGetComponent(out RisingPickup risingPickup))
+            {
+                if (risingPickup.CheckIfHeld()) return;
+            }
+
+            /*if(pickup.TryGetComponent(out IF_Carryable carryable))
+            {
+                if (carryable.Held()) return;
+                carryable.PickUp(this);
+            }*/
+            
+
+            if (pc._heldItem != null) pc.DropItem();
+            
+            pc._heldItem = pickup;
+            var view = pc._heldItem.GetPhotonView();
+            if (view != null) view.TransferOwnership(PhotonNetwork.LocalPlayer);
+            pc.AttachItem(pc._heldItem);
+        }
+
+        // drop item
+        if (pc.drop.triggered) {
+            pc.DropItem();
+        }
+
+        // use item / interact with item
+        if (pc.interact.triggered) {
+            pc.UseItem();
+        }
+
+        // throw item
+        if (pc.pitch.triggered) {
+            // todo: allow the player to charge the throw
+            // probably needs to add a Hold Interaction for the throw action
+            if (pc.ThrowItem(ref pc._heldItem, _rb.velocity)) pc.audioSource.Play();
+        }
     }
 
 

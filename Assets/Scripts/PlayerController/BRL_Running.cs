@@ -22,7 +22,7 @@ public class BRL_Running : BRL_BaseState
             pc.changeState(pc.Idle);
         }
 
-        if (pc.jump.action.triggered && pc._isGrounded)
+        if (pc.jump.triggered && pc._isGrounded)
         {
             //_rb.velocity += new Vector3(0f, jumpForce, 0f);
             // transition to Jump State

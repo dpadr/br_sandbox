@@ -2046,6 +2046,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1382231268112906588, guid: 36e967ebb583b99418c55ca16f364d8d, type: 3}
   m_PrefabInstance: {fileID: 1300352670}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &357610938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3479097381663935825, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+  m_PrefabInstance: {fileID: 1156238133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &360226330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2347,6 +2352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &409275353 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3479097381827867002, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+  m_PrefabInstance: {fileID: 1156238133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422900211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,7 +3594,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1001 &680448163
@@ -3644,6 +3654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25499527898c0994298bbf33f4e0a5ce, type: 3}
+--- !u!1 &683411238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8920205214953641906, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+  m_PrefabInstance: {fileID: 1156238133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &688260294
 GameObject:
   m_ObjectHideFlags: 0
@@ -6976,6 +6991,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 2123386164132375035, guid: ee4d63a204d257a41adffc136127792c, type: 3}
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: movement
+      value: 
+      objectReference: {fileID: 5657793516550593534, guid: ee4d63a204d257a41adffc136127792c, type: 3}
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: itemSocket
+      value: 
+      objectReference: {fileID: 357610938}
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: emoteSocket
+      value: 
+      objectReference: {fileID: 683411238}
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: reviveTrigger
+      value: 
+      objectReference: {fileID: 409275353}
+    - target: {fileID: 1210125084914111137, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: currentStateName
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3479097381688741514, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
       propertyPath: sceneViewId
       value: 7
@@ -7003,6 +7042,10 @@ PrefabInstance:
     - target: {fileID: 4489059890613952460, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
       propertyPath: m_Name
       value: Test_Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489059890613952460, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4489059890613952462, guid: ae66ee31dec27044ab950702bddac8b8, type: 3}
       propertyPath: m_RootOrder

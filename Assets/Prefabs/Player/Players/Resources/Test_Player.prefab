@@ -351,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4489059890613952462
 Transform:
   m_ObjectHideFlags: 0
@@ -662,6 +662,9 @@ MonoBehaviour:
   _isDead: 0
   _playerOrientation: {fileID: 0}
   _spriteRenderer: {fileID: 0}
+  _heldItem: {fileID: 0}
+  _currentEmote: {fileID: 0}
+  _fullHeart: {fileID: 0}
   groundPoint: {fileID: 4489059890757483920}
   groundLayer:
     serializedVersion: 2
@@ -671,16 +674,68 @@ MonoBehaviour:
     m_Bits: 384
   flipEnabled: 0
   cinemachine: {fileID: 3479097382107156396}
-  itemSocket: {fileID: 0}
-  emoteSocket: {fileID: 0}
-  reviveTrigger: {fileID: 0}
+  itemSocket: {fileID: 3479097381663935825}
+  emoteSocket: {fileID: 8920205214953641906}
+  reviveTrigger: {fileID: 3479097381827867002}
   spriteAnimator: {fileID: 4489059890629103276}
   audioSource: {fileID: 3479097380964316248}
   moveSpeed: 1.5
   jumpForce: 4
   hitPoints: 1
-  movement: {fileID: 5657793516550593534, guid: ee4d63a204d257a41adffc136127792c, type: 3}
-  jump: {fileID: 2123386164132375035, guid: ee4d63a204d257a41adffc136127792c, type: 3}
+  movement:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  jump:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  pickup:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  drop:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  pitch:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  interact:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   currentStateName: 0
 --- !u!1 &4489059890629103275
 GameObject:
