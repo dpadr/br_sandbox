@@ -43,7 +43,7 @@ public class Bee : MonoBehaviourPun, RisingEnemy
         
         if (!other.CompareTag("Player")) return;
         
-        if (other.TryGetComponent(out PlayerController playerController))
+        if (other.TryGetComponent(out BR_PlayerController playerController))
         {
             playerController.photonView.RPC("DamagePlayer", RpcTarget.AllBuffered);
             PhotonNetwork.Destroy(this.gameObject);

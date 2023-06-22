@@ -16,6 +16,12 @@ public class BRL_BaseState
     //      applies moving speed, does grounded check, flips sprites
     //      allows for Pick Up, Drop, Pitch, Interact
     public virtual void OnUpdate() {
+
+        if (pc._isDead) {
+            pc.changeState(pc.Dead);
+            return;
+        }
+
         pc._moveInput = pc.movement.ReadValue<Vector2>();
         pc._moveInput.Normalize(); 
 
@@ -30,7 +36,11 @@ public class BRL_BaseState
         {
             pc._isGrounded = true;
         }
-        else pc._isGrounded = false;
+        else 
+        {
+            pc._isGrounded = false;
+            pc.changeState(pc.Falling);
+        }
 
         pc.spriteAnimator.SetBool("onGround", pc._isGrounded);
 

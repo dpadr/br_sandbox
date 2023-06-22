@@ -49,6 +49,10 @@ public class BR_PlayerController : BR_Creature
     [HideInInspector] public BRL_Idle Idle;
     [HideInInspector] public BRL_Running Running;
     [HideInInspector] public BRL_Jumping Jumping;
+    [HideInInspector] public BRL_Dead Dead;
+    [HideInInspector] public BRL_Falling Falling;
+    [HideInInspector] public BRL_Sliding Sliding;
+    [HideInInspector] public BRL_Incapacitated Incapacitated;
 
     public BRL_BaseState currentState;
     public PlayerState currentStateName;
@@ -58,6 +62,10 @@ public class BR_PlayerController : BR_Creature
         Idle = new BRL_Idle();
         Running = new BRL_Running();
         Jumping = new BRL_Jumping();
+        Dead = new BRL_Dead();
+        Falling = new BRL_Falling();
+        Sliding = new BRL_Sliding();
+        Incapacitated = new BRL_Incapacitated();
         changeState(Idle);
         
         // set up inputs
@@ -99,6 +107,18 @@ public class BR_PlayerController : BR_Creature
         		return;
    	    }
 
+        if (!_isCamActive)
+        {
+            if (photonView.IsMine)
+            {
+                cinemachine.gameObject.SetActive(true);
+                _isCamActive = true;
+            }
+        }
+
+        if (!photonView.IsMine) return;
+        //if (_isDead) return;
+
         // todo
         OnUpdate();
     }
@@ -108,10 +128,19 @@ public class BR_PlayerController : BR_Creature
     }
 
     public void changeState(BRL_BaseState newState) {
+        if (currentStateName == newState.stateName) {
+            // same state, do need to change
+            return;
+        }
+
+
         if (currentState != null)
         {
+            // need to exit current state
             currentState.OnExit();
         }
+
+        // need to enter current state
         currentState = newState;
         currentStateName = newState.stateName;
         newState.OnEnter(this);
@@ -209,5 +238,60 @@ public class BR_PlayerController : BR_Creature
         
     }
 
+    [ContextMenu("deadTest")]
+    public void DeadTest()
+    {
+        /* turn on dead stuff */
+        reviveTrigger.SetActive(_isDead);
+        emoteSocket.SetActive(_isDead);
+        spriteAnimator.SetBool("isDead", _isDead);
+        if (_fullHeart!=null) _fullHeart.SetActive(!_isDead);
+        
+        if (_isDead)
+        {
+            DropItem();
+        }
+        // todo: the client cant delete this because it doesnt own it?! find another way to delete it
+        // else // PhotonNetwork.Destroy(_currentEmote);
+    }
+    
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            stream.Serialize(ref _isDead);
+            stream.Serialize(ref _hitPoints);
+        }
+        else
+        {
+            stream.Serialize(ref _isDead);
+            stream.Serialize(ref _hitPoints);
+        }
+
+    }
+
+    [PunRPC]
+    public bool DamagePlayer()
+    {
+        if (_isDead) return false;
+        
+        if (_hitPoints > 0) _hitPoints--;
+
+        if (_hitPoints == 0)
+        {
+            _isDead = true;
+            DeadTest();
+        }
+
+        return true;
+    }
+    [PunRPC]
+    public void RevivePlayer()
+    {
+        if (!_isDead) return;
+        _isDead = false;
+        DeadTest();
+        _hitPoints = hitPoints;
+    }
 
 }

@@ -14,12 +14,6 @@ public class BRL_Jumping : BRL_BaseState
         Rigidbody _rb = pc.GetComponent<Rigidbody>();
         _rb.velocity += new Vector3(0f, pc.getJumpForce(), 0f);
 
-        if (pc._isGrounded) {
-            if (Mathf.Abs(pc._moveInput.x) > Mathf.Epsilon || Mathf.Abs(pc._moveInput.y) > Mathf.Epsilon) {
-                pc.changeState(pc.Running);
-            } else {
-                pc.changeState(pc.Idle);
-            }
-        }
+        pc.changeState(pc.Falling);
     }
 }
