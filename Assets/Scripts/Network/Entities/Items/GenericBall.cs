@@ -36,7 +36,7 @@ public class GenericBall : RisingPickup, RisingInteractable
         _rigidbody.AddForceAtPosition(Vector3.forward * power + Vector3.up * power +  Vector3.left * power, pos, ForceMode.Impulse);
         print(name + " was hit !");
 
-        _ballIsLive = true;
+        _ballIsLive = true; // not sure what this does yet
         _ballIsAirborne = true;
 
         var newEvent = new BaseballAction(BaseballAction.BballActionType.Hit, transform.position, this.gameObject, "temp");
@@ -93,19 +93,30 @@ public class GenericBall : RisingPickup, RisingInteractable
         _canBeHit = false;
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            if (_ballIsLive && _ballIsAirborne) CallBaseballEvent(new BaseballAction(BaseballAction.BballActionType.HitLand, 
+                transform.position, this.gameObject, "temp"));
+
+            _ballIsAirborne = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ground"))
-        {
-      //      StartCoroutine(DelayBallCanBeHit());
-        }
-
         if (other.CompareTag("Folliage"))
         {
             if (other.TryGetComponent(out SceneryItem sceneryItem))
             {
                 sceneryItem.TriggerParticle();
             }
+        }
+
+        if (other.CompareTag("Player") && _ballIsAirborne)
+        {
+            // todo: knockout the player?
         }
     }
 

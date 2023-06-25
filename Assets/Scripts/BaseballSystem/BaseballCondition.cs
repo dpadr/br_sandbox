@@ -3,7 +3,6 @@ using System.Linq;
 using UnityEngine;
 
 /* class to store the current condition of the baseball game i.e.: field, score, props, etc.
- * todo: 
  * this class contains a bunch of validation methods but im assuming for network performance
  * that it doesn't matter how much logic it contains vs how much data
 */
@@ -19,9 +18,13 @@ public class BaseballCondition
     {
         Home, First, Second, Third, Pitchers
     }
-    
-    public bool PlayOngoing { get; private set; }
 
+    public BaseballState State
+    {
+        get => _currentBaseballState;
+        set => _currentBaseballState = value;
+    }
+    public bool PlayOngoing { get; private set; }
     public string ActiveHitter { get; private set; }
     
     private GameObject _first, _second, _third, _home, _pitchers;
@@ -143,6 +146,8 @@ public class BaseballCondition
 
     public BaseballAction ValidateBballEvent(BaseballAction baseballAction)
     {
+
+        if (_currentBaseballState != BaseballState.Active) return new BaseballAction();
         /*
          * Probably need a scriptable object or some such way of storing the mapping of all the various results
          * so they can easily be modified
@@ -153,6 +158,8 @@ public class BaseballCondition
                 return CheckHit(baseballAction);
             case BaseballAction.BballActionType.HitLand:
                 return CheckHitLand(baseballAction);
+            case BaseballAction.BballActionType.Catch:
+                return new BaseballAction(); // todo: not implemented yet
             case BaseballAction.BballActionType.TagBase:
                 return CheckBaseRun(baseballAction);
             default:
@@ -164,12 +171,19 @@ public class BaseballCondition
     {
         if (!PlayOngoing) return new BaseballAction();
         
-        // or don't ?? for the funnies
-
+        if (baseballAction.Player != ActiveHitter) return new BaseballAction();
+        
+        /*
+         * ^ this kind of stuff actually makes me want to re-introduce the idea of hats/jerseys
+         * so we could imagine one player starting a play and another player needing to hop in
+         * to help finish it
+         */
+        
         if (_baseballDiamondGOs.Contains(baseballAction.EventOriginObject)) // is there a valid base
         {
             /*
              * todo: depending on which base was tagged ... something
+             * is it necessary to run the bases in order?
              * todo: going to need more info like player and base info perhaps
              */
             
@@ -188,16 +202,15 @@ public class BaseballCondition
 
     private BaseballAction CheckHitLand(BaseballAction hitLand)
     {
-        /*
-         * todo: what if the ball is caught or hits a player, object or NPC
-         */
-        
-        // todo: add home run check
+        // todo: allow ball to get stuck in trees or other objects perhaps
         
         if (CheckIntersection(Infield, hitLand.EventPos))
             return new BaseballAction(BaseballAction.BballResultType.BaseHit, BaseballAction.BballEventMagnitude.Low);
         if (CheckIntersection(WholeField, hitLand.EventPos))
             return new BaseballAction(BaseballAction.BballResultType.DriveHit, BaseballAction.BballEventMagnitude.Med);
+        
+        // todo: add home run check
+        
         return new BaseballAction(BaseballAction.BballResultType.Foul, BaseballAction.BballEventMagnitude.Low);
     }
 
@@ -207,7 +220,8 @@ public class BaseballCondition
 
         if (CheckIntersection(Infield, hit.EventPos))
         {
-            PlayOngoing = true; 
+            PlayOngoing = true;
+            ActiveHitter = hit.Player;
             return new BaseballAction(BaseballAction.BballResultType.Hit, BaseballAction.BballEventMagnitude.Low);
         }
 

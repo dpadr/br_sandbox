@@ -10,7 +10,7 @@ public class BaseballMeter : MonoBehaviourPun
 {
     [SerializeField] private Image progressMask, fill;
     private int _max, _current;
-    private int Current
+    private int Current // eh maybe this as a property so more flexible later?
     {
         get => _current;
         set

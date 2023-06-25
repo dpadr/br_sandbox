@@ -16,8 +16,12 @@ public class Club : RisingPickup, RisingInteractable
 
     [Header("Parameters")] 
     [SerializeField] private Vector2 hitPower;
-    [SerializeField] private float swingRadius = 2.5f; 
+    [SerializeField] private float swingRadius = 2.5f;
+
+    private bool _hasSwung;
     
+    public static Action<BaseballAction> BallgameEvent;
+
     [PunRPC]
     public override void Drop()
     {
@@ -28,6 +32,11 @@ public class Club : RisingPickup, RisingInteractable
     public void Interact()
     {
         print("swing batta bata");
+        if (!_hasSwung)
+        {
+            _hasSwung = true;
+            BallgameEvent?.Invoke(new BaseballAction("player"));
+        }
         animator.SetTrigger("swing");
         audioSource.Play();
         foreach (var x in GetClosestItem())

@@ -114,7 +114,7 @@ public class Boar : MonoBehaviourPun, RisingEnemy
             var temp = hitColliders.ToList();
             
             temp.RemoveAll(x => x == null);
-            temp.RemoveAll(x => x.gameObject.TryGetComponent(out Baseball_Base bases) == false );
+            temp.RemoveAll(x => x.gameObject.TryGetComponent(out BR_BballBase bases) == false );
             // don't try to pickup the currently held item
             //if (_heldItem != null) temp.Remove(_heldItem.GetComponent<Collider>());
             var distanceSorted = temp.OrderBy(x => (transform.position - x.transform.position).sqrMagnitude).ToList();

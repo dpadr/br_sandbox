@@ -1,13 +1,15 @@
 using System;
 using UnityEngine;
+
 // any possible event that could count as baseball
+
 public class BaseballAction
 {
     public enum BballActionType
     {
-        Ignore, Hit, HitLand, TagBase, LeaveBase, Catch, TagPlayer, Result
+        Ignore, Hit, HitLand, TagBase, LeaveBase, Catch, TagPlayer, PlayBall, Result
     }
-    public enum BballEventMagnitude // not sure if this is needed
+    public enum BballEventMagnitude 
     {
         Low = 2, Med = 4, High = 6
     }
@@ -46,13 +48,21 @@ public class BaseballAction
         Player = player;
     }
     
+    /* for playball */
+
+    public BaseballAction(string player, BballActionType eventType = BballActionType.PlayBall)
+    {
+        Player = player;
+        Event = eventType;
+    }
+    
     public override string ToString()
     {
         return Event switch
         {
             BballActionType.Ignore => "Baseball event ignored",
-            BballActionType.Result => "Baseball Result: " + Result + "w/ Mag: " + Magnitude,
-            _ => Player + "did Baseball Event:" + Event + " At:" + EventPos
+            BballActionType.Result => "Baseball Result: " + Result + " Magnitude: " + Magnitude,
+            _ => Player + " did Baseball Event:" + Event + " At:" + EventPos
         };
     }
 }

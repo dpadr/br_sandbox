@@ -3,9 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Android;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 /*
@@ -42,17 +40,16 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     public Vector2Int MeterDefaultMax => meterDefaultMax;
 
     private float _meterTimeRemaining;
-    private int _baseballLevel;
-    private int _currentLevel;
+    private int _currentBaseballLevel;
     public int BaseballLevel
     {
-        get => _currentLevel;
+        get => _currentBaseballLevel;
 
         private set
         {
-            if (value != _currentLevel)
+            if (value != _currentBaseballLevel)
             {
-                _currentLevel = value;
+                _currentBaseballLevel = value;
                 UpdateMeterUI();
             }
         }
@@ -70,7 +67,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     
     private void Start()
     {
-        isMeterRunning = true;
+        // isMeterRunning = true;
         BaseballLevel = meterDefaultMax.x;
         /* temp stuff: eventually the blueprints will handle base setup */
         _currentBaseballCondition = new BaseballCondition();
@@ -123,10 +120,6 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
     
     private void RegisterBaseballEvent (BaseballAction baseballAction)
     {
-        /*
-         * 
-         */
-        
         
         if (!PhotonNetwork.IsMasterClient) return;
         
@@ -134,22 +127,20 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         // this can probably be handled elsewhere and once?
         if (_currentBaseballCondition == null) _currentBaseballCondition = new BaseballCondition();
 
-        if (baseballAction.Event == BaseballAction.BballActionType.Ignore)
+        switch (baseballAction.Event)
         {
-            Debug.Log("Baseball Event Ignored");
-            return;
+            case BaseballAction.BballActionType.Ignore:
+                print(baseballAction);
+                return;
+            case BaseballAction.BballActionType.PlayBall:
+                PlayBall();
+                return;
+            case BaseballAction.BballActionType.Result:
+                GradeBballAction(baseballAction);
+                return;
         }
-        
-        _eventLog.Add(baseballAction, Time.time); // log & eventually display this at least for debug purposes
 
-        
-        
-        if (baseballAction.Event == BaseballAction.BballActionType.Result)
-        {
-            GradeBballAction(baseballAction);
-            return;
-        }
-        
+        _eventLog.Add(baseballAction, Time.time); // log & eventually display this at least for debug purposes
         
         RegisterBaseballEvent(_currentBaseballCondition.ValidateBballEvent(baseballAction));
         // if false: grade the event 
@@ -165,7 +156,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
 
         else
         {
-            if (_currentLevel <= 0)
+            if (_currentBaseballLevel <= 0)
             {
                 _meterTimeRemaining = 0;
                 isMeterRunning = false;
@@ -194,6 +185,7 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
                 break;
             case BaseballAction.BballResultType.Hit:
                 BaseballLevel += (int)baseballAction.Magnitude;
+                if (!isMeterRunning) PlayBall();
                 break;
             case BaseballAction.BballResultType.BaseRun:
                 BaseballLevel += (int)baseballAction.Magnitude;
@@ -204,6 +196,12 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
         
         // todo: 'score' the baseball-ey-ness
         // todo: fire off resulting events (increment the meter, etc) 
+    }
+
+    private void PlayBall()
+    {
+        isMeterRunning = true;
+        _currentBaseballCondition.State = BaseballCondition.BaseballState.Active;
     }
     
     public bool RegisterBlueprintEvent()
@@ -245,15 +243,18 @@ public class BaseballManager : MonoBehaviourPun, IPunObservable
 
     private void OnEnable()
     {
-        //todo: migrate to entity system
+        //these events should be subscribed to from the entity system instead of deprecated prototype stuff 
+        
         GenericBall.BallgameEvent += RegisterBaseballEvent;
         BR_BballBase.BallgameEvent += RegisterBaseballEvent;
-        UpdateBballMeter?.Invoke(BaseballLevel);
+        Club.BallgameEvent += RegisterBaseballEvent;
+        UpdateBballMeter?.Invoke(BaseballLevel); // set the starting baseball level
     }
 
     private void OnDisable()
     {
         GenericBall.BallgameEvent -= RegisterBaseballEvent;
         BR_BballBase.BallgameEvent -= RegisterBaseballEvent;
+        Club.BallgameEvent -= RegisterBaseballEvent;
     }
 }
