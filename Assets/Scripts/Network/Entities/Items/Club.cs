@@ -31,7 +31,7 @@ public class Club : RisingPickup, RisingInteractable
 
     public void Interact()
     {
-        print("swing batta bata");
+        // print("swing batta bata");
         if (!_hasSwung)
         {
             _hasSwung = true;

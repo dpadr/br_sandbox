@@ -8,8 +8,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseballSystem/BaseballMeter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,6 +68,7 @@
       <updated>1684262058744</updated>
       <workItem from="1684262070966" duration="7479000" />
       <workItem from="1684940398109" duration="97152000" />
+      <workItem from="1689101797488" duration="3861000" />
     </task>
     <servers />
   </component>

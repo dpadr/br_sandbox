@@ -12,7 +12,9 @@ public class BR_Boar : BR_Animal
     {
         base.Start(); //calls the start function of the parent class (in this case, bc Animal has no start, it calls Creature's)
         _healthComponent.SetMaxHealth(maxHealth);
-        boarBT = new BoarBT();
+        //boarBT = new BoarBT(transform);
+        gameObject.AddComponent<BoarBT>();
+
     }
     protected override void OnUpdate()
     {
