@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(BR_HealthComponent))]
 public abstract class BR_Creature : BR_Entity, IF_Damageable
 {
-    private BR_HealthComponent _healthComponent;
+    protected BR_HealthComponent _healthComponent;
 
-    private void Start()
+    protected void Start()
     {
         _healthComponent = GetComponent<BR_HealthComponent>();
         AddComponent(_healthComponent, this);
@@ -23,7 +23,7 @@ public abstract class BR_Creature : BR_Entity, IF_Damageable
         return false;
     }
 
-    private void Die()
+    protected void Die()
     {
         SetState(EntityState.Destroy);
     }

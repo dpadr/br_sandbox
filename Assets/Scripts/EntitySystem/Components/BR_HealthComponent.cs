@@ -27,4 +27,13 @@ public class BR_HealthComponent : BR_Component
         _currentHealth -= damage;
         return _currentHealth;
     }
+
+    public void SetMaxHealth(int max)
+    {
+        maxHealth = max;
+        if(CurrentHealth == MaxHealth)
+        {
+            _currentHealth = max;
+        }
+    }
 }
