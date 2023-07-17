@@ -21,8 +21,7 @@ public class TaskWander : Node
 
     public override NodeState Evaluate()
     {
-        Debug.LogWarning("t: " + _transform + "w: " + _wanderTarget);
-        
+        // Debug.LogWarning("t: " + _transform + "w: " + _wanderTarget);
         
         if (_waiting)
         {
