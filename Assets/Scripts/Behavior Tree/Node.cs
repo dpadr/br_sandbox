@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 
 namespace BehaviorTree
 {
@@ -10,8 +11,24 @@ namespace BehaviorTree
         FAILURE
     }
 
-    public class Node
+    public class Node : IPunObservable
     {
+        /** here's how we might handle the network update of the state **/
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting && PhotonNetwork.IsMasterClient) 
+            {
+                // We own this player: send the others our data
+                stream.SendNext(state); // does this receive a reference or the actual object??
+            }
+            else
+            {
+                // Network player, receive data
+                this.state = (NodeState)stream.ReceiveNext();
+            }
+            
+        }
+        
         protected NodeState state;
 
         public Node parent;
@@ -23,7 +40,8 @@ namespace BehaviorTree
         {
             parent = null;
         }
-
+        
+        /** what's the deal with the default node evaluation set to failure? **/
         public virtual NodeState Evaluate() => NodeState.FAILURE;
         public Node(List<Node> children)
         {
@@ -67,6 +85,8 @@ namespace BehaviorTree
                 cleared = node.ClearData(key);
             return cleared;
         }
+
+        
     }
 
 }

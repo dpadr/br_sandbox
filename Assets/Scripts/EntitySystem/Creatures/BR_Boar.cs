@@ -1,25 +1,42 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using BehaviorTree;
-public class BR_Boar : BR_Animal
+using Photon.Pun;
+using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
+
+public class BR_Boar : BR_Animal, IInRoomCallbacks
 {
     [SerializeField]
     private int maxHealth = 10;
 
-    BoarBT boarBT;
+    private BoarBT _boarTree;
+
+    private void OnEnable()
+    {
+        // PhotonNetwork.AddCallbackTarget(this);
+    }
+
+    private void OnDisable()
+    {
+        // PhotonNetwork.RemoveCallbackTarget(this);
+    }
+
     protected void Start()
     {
         base.Start(); //calls the start function of the parent class (in this case, bc Animal has no start, it calls Creature's)
         _healthComponent.SetMaxHealth(maxHealth);
         //boarBT = new BoarBT(transform);
-        gameObject.AddComponent<BoarBT>();
+        _boarTree = gameObject.AddComponent<BoarBT>();
+        _boarTree.enabled = PhotonNetwork.IsMasterClient;
 
     }
     protected override void OnUpdate()
     {
 
-
+        /* todo: this is a terrible hack but i can't seem to get the IInroomcallbacks to work */
+        _boarTree.enabled = PhotonNetwork.IsMasterClient;
 
     }
 
@@ -31,21 +48,29 @@ public class BR_Boar : BR_Animal
 #endif
     }
 
-}
-
-public class BoarBT : BehaviorTree.Tree
-{
-
-    public static float speed = 2f;
-
-    protected override Node SetupTree()
+    public void OnPlayerEnteredRoom(Player newPlayer)
     {
-        Node root = new TaskWander(transform);
-        /*Node root = new Sequence(new List<Node> //This isn't working, need to figure out how to reping IsHost until it runs
-            {
-                new IsHost(),
-                new TaskWander(transform),
-            });*/
-        return root;
+       
+    }
+
+    public void OnPlayerLeftRoom(Player otherPlayer)
+    {
+       
+    }
+
+    public void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)
+    {
+       
+    }
+
+    public void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)
+    {
+       
+    }
+
+    public void OnMasterClientSwitched(Player newMasterClient)
+    {
+        print("master client switched");
+        _boarTree.enabled = PhotonNetwork.IsMasterClient;
     }
 }
