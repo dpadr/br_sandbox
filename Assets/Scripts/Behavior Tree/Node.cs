@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Photon.Pun;
+using UnityEngine;
 
 namespace BehaviorTree
 {
@@ -11,23 +12,29 @@ namespace BehaviorTree
         FAILURE
     }
 
-    public class Node : IPunObservable
+    public class Node
     {
-        /** here's how we might handle the network update of the state **/
-        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        {
-            if (stream.IsWriting && PhotonNetwork.IsMasterClient) 
-            {
-                // We own this player: send the others our data
-                stream.SendNext(state); // does this receive a reference or the actual object??
-            }
-            else
-            {
-                // Network player, receive data
-                this.state = (NodeState)stream.ReceiveNext();
-            }
-            
-        }
+        // #region PUN
+        // /** here's how we might handle the network update of the state **/
+        //
+        //
+        // public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        // {
+        //     if (stream.IsWriting) 
+        //     {
+        //         // We own this player: send the others our data
+        //         stream.SendNext(state); // does this receive a reference or the actual object??
+        //         Debug.Log("write " + state);
+        //     }
+        //     else
+        //     {
+        //         // Network player, receive data
+        //         this.state = (NodeState)stream.ReceiveNext();
+        //         Debug.Log("read " + state);
+        //     }
+        //     
+        // }
+        // #endregion
         
         protected NodeState state;
 
@@ -39,6 +46,7 @@ namespace BehaviorTree
         public Node()
         {
             parent = null;
+            
         }
         
         /** what's the deal with the default node evaluation set to failure? **/

@@ -12174,6 +12174,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 1817688075980792472}
+  - {fileID: 1817688075980792474}
   sceneViewId: 54
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -12202,7 +12203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6739cd47ab35b2b43bc5b08bf85d2feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 10
 --- !u!23 &1817688076340371472
 MeshRenderer:
   m_ObjectHideFlags: 0

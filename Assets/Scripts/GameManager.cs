@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviourPunCallbacks
     public GameObject heartUI;
     private AudioSource _source;
     private bool _showControls;
+
+    /* Instead of using callback interfaces all over the place we can use the GameManager to route callbacks */
+    public static event Action MasterClientChange;
     
     private void Update()
     {
@@ -81,6 +84,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+        MasterClientChange?.Invoke();
+        
         if (playerPrefab == null)
         {
             Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'",this);
@@ -108,5 +113,11 @@ public class GameManager : MonoBehaviourPunCallbacks
             
         }
     }
+    
+    public override void OnMasterClientSwitched(Player newMasterClient)
+    {
+        MasterClientChange?.Invoke();
+    }
+    
 }
 

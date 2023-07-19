@@ -1,6 +1,6 @@
 using BehaviorTree;
 
-public class BoarBT : BehaviorTree.Tree
+public class BoarBT : BehaviourTree
 {
 
     public static float speed = 2f;

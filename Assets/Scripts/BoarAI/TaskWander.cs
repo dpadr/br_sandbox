@@ -7,7 +7,7 @@ using BehaviorTree;
 public class TaskWander : Node
 {
     private Transform _transform;
-    private float _waitTime = 1f; //seconds
+    private float _waitTime = 3f; //seconds
     private float _waitCounter = 0f;
     private bool _waiting = false;
     private float _minWanderDist = 1f;
@@ -30,6 +30,10 @@ public class TaskWander : Node
             {
                 _waiting = false;
             }
+
+            
+            state = NodeState.FAILURE;
+            return state;
         }
         else
         {
@@ -54,7 +58,7 @@ public class TaskWander : Node
                 //_transform.LookAt(_wanderTarget);
             }
         }
-            state = NodeState.RUNNING;
+        state = NodeState.RUNNING;
         return state;
     }
 }

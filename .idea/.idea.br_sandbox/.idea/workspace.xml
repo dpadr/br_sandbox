@@ -29,6 +29,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/builds/baseball rising/stream_writing.app/Contents/MacOS/Sandbox" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Library/Mobile Documents/com~apple~CloudDocs/Documents/builds/baseball rising/stream_writing.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -69,7 +77,7 @@
       <workItem from="1684262070966" duration="7479000" />
       <workItem from="1684940398109" duration="97152000" />
       <workItem from="1689101797488" duration="4344000" />
-      <workItem from="1689620727155" duration="7189000" />
+      <workItem from="1689620727155" duration="17891000" />
     </task>
     <servers />
   </component>
