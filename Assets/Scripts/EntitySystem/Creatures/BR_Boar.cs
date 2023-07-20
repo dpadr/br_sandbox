@@ -46,7 +46,7 @@ public class BR_Boar : BR_Animal, IPunObservable
     }
     protected override void OnUpdate()
     {
-        StreamTest();
+       
     }
 
     private void OnValidate()
@@ -57,26 +57,23 @@ public class BR_Boar : BR_Animal, IPunObservable
 #endif
     }
 
-    [ContextMenu("testing stream")]
-    public void StreamTest()
-    {
-        maxHealth--;
-    }
-    
+   
     /* Lore: apparently OnPhotonSerializeView is only called with 2 or more players in game */
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting) 
         {
-            // We own this player: send the others our data
-            stream.SendNext(maxHealth); // does this receive a reference or the actual object??
-            Debug.Log("write " + maxHealth);
+            // // We own this player: send the others our data
+            // stream.SendNext(maxHealth); // does this receive a reference or the actual object??
+            // Debug.Log("write " + maxHealth);
+            
+            // todo: should syncronize the behavior tree state
         }
         else
         {
             // Network player, receive data
-            this.maxHealth = (int)stream.ReceiveNext();
-            Debug.Log("read " + maxHealth);
+            // this.maxHealth = (int)stream.ReceiveNext();
+            // Debug.Log("read " + maxHealth);
         }
         
     }
