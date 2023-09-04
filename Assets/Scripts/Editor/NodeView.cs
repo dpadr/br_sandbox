@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class NodeView : UnityEditor.Experimental.GraphView.Node
 {
-    public Node node;
-    public NodeView(Node node) {
+    public BR_Node node;
+    public NodeView(BR_Node node) {
         this.node = node;
         this.title = node.name;
     }
