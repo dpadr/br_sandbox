@@ -28,6 +28,7 @@ public class BehaviorTreeView : GraphView
         {
             var types = TypeCache.GetTypesDerivedFrom<ActionNode>();
             foreach(var type in types) {
+                Debug.Log("here");
                 evt.menu.AppendAction($"[{type.BaseType.Name}] {type.Name}", (a) => CreateNode(type));
             }
         }
@@ -58,11 +59,13 @@ public class BehaviorTreeView : GraphView
 
 
     void CreateNode(System.Type type) {
-        Node node = tree.CreateNode(type);
+        Debug.Log(tree == null ? "True" : "False");
+        BR_Node node = tree.CreateNode(type);
+        Debug.Log(node);
         CreateNodeView(node);
     }
 
-    void CreateNodeView(Node node) {
+    void CreateNodeView(BR_Node node) {
         NodeView nodeView = new NodeView(node);
         AddElement(nodeView);
     }

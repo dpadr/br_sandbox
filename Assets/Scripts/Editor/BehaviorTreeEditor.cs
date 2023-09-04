@@ -34,10 +34,48 @@ public class BehaviorTreeEditor : EditorWindow
         inspectorView = root.Q<InspectorView>();
     }
 
-    private void OnSelectionChange() {
+    // private void OnSelectionChange() {
+    //     BR_BehaviorTree tree = Selection.activeObject as BR_BehaviorTree;
+    //     Debug.Log(tree == null ? "NULL" : "OK");
+    //     if (tree) {
+    //         treeView.PopulateView(tree);
+    //     }
+    // }
+
+    private void OnSelectionChange()
+    {
         BR_BehaviorTree tree = Selection.activeObject as BR_BehaviorTree;
-        if (tree) {
-            treeView.PopulateView(tree);
+        if (tree == null)
+        {
+            if (Selection.activeGameObject)
+            {
+                BehaviorTreeRunner treeRunner = Selection.activeGameObject.GetComponent<BehaviorTreeRunner>();
+                if (treeRunner)
+                {
+                    tree = treeRunner.tree;
+                }
+            }
+        }
+
+        if (tree != null)
+        {
+            if (Application.isPlaying || AssetDatabase.CanOpenAssetInEditor(tree.GetInstanceID()))
+            {
+                SerializedObject so = new SerializedObject(tree);
+                rootVisualElement.Bind(so);
+                if (treeView != null)
+                    treeView.PopulateView(tree);
+
+                return;
+            }
+        }
+
+        rootVisualElement.Unbind();
+
+        TextField textField = rootVisualElement.Q<TextField>("BehaviorTreeName");
+        if (textField != null)
+        {
+            textField.value = string.Empty;
         }
     }
 }

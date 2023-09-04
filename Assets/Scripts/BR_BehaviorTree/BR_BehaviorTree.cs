@@ -23,8 +23,13 @@ public class BR_BehaviorTree : ScriptableObject
         node.guid = GUID.Generate().ToString();
         nodes.Add(node);
 
+        if (rootNode == null) {
+            rootNode = node;
+        }
+
         AssetDatabase.AddObjectToAsset(node, this);
         AssetDatabase.SaveAssets();
+        Debug.Log("getting called");
         return node;
     }
 
